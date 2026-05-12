@@ -1,0 +1,1037 @@
+{
+  "globalStats": {
+    "totalRRF": 650.1,
+    "grants": 385.8,
+    "loans": 264.3,
+    "disbursed": 240.5
+  },
+  "milestones": [
+    {
+      "id": 1,
+      "country": "Portugal",
+      "pillar": "green",
+      "description": "Buildings energy renovation",
+      "status": "completed",
+      "deadline": "2023-Q2",
+      "csr": "CSR 3 of 2020"
+    },
+    {
+      "id": 2,
+      "country": "Portugal",
+      "pillar": "digital",
+      "description": "Digital skills training",
+      "status": "completed",
+      "deadline": "2023-Q4",
+      "csr": "CSR 2 of 2019"
+    },
+    {
+      "id": 3,
+      "country": "Portugal",
+      "pillar": "digital",
+      "description": "Public administration digitalisation",
+      "status": "in-progress",
+      "deadline": "2024-Q2",
+      "csr": "CSR 4 of 2020"
+    },
+    {
+      "id": 4,
+      "country": "Spain",
+      "pillar": "green",
+      "description": "Renewable energy regulatory reform",
+      "status": "completed",
+      "deadline": "2023-Q1",
+      "csr": "CSR 1 of 2020"
+    },
+    {
+      "id": 5,
+      "country": "Spain",
+      "pillar": "social-cohesion",
+      "description": "Labour market reform implementation",
+      "status": "completed",
+      "deadline": "2023-Q2",
+      "csr": "CSR 2 of 2020"
+    },
+    {
+      "id": 6,
+      "country": "France",
+      "pillar": "green",
+      "description": "Thermal renovation of housing",
+      "status": "completed",
+      "deadline": "2023-Q3",
+      "csr": "CSR 3 of 2019"
+    },
+    {
+      "id": 7,
+      "country": "Germany",
+      "pillar": "digital",
+      "description": "Classroom digitalisation",
+      "status": "completed",
+      "deadline": "2023-Q4",
+      "csr": "CSR 2 of 2020"
+    },
+    {
+      "id": 8,
+      "country": "Germany",
+      "pillar": "green",
+      "description": "Hydrogen strategy implementation",
+      "status": "in-progress",
+      "deadline": "2024-Q3",
+      "csr": "CSR 1 of 2020"
+    },
+    {
+      "id": 9,
+      "country": "Portugal",
+      "pillar": "smart-growth",
+      "description": "Capitalization fund for SMEs",
+      "status": "pending",
+      "deadline": "2024-Q3",
+      "csr": "CSR 3 of 2020"
+    },
+    {
+      "id": 10,
+      "country": "Spain",
+      "pillar": "digital",
+      "description": "5G network rollout support",
+      "status": "in-progress",
+      "deadline": "2024-Q4",
+      "csr": "CSR 3 of 2020"
+    }
+  ],
+  "disbursements": [
+    {
+      "id": 1,
+      "country": "Portugal",
+      "amount": 2.22,
+      "date": "2022-06",
+      "type": "Grant",
+      "milestones": 38,
+      "status": "Disbursed"
+    },
+    {
+      "id": 2,
+      "country": "Portugal",
+      "amount": 1.84,
+      "date": "2023-02",
+      "type": "Grant",
+      "milestones": 27,
+      "status": "Disbursed"
+    },
+    {
+      "id": 8,
+      "country": "Portugal",
+      "amount": 2.4,
+      "date": "2023-09",
+      "type": "Grant",
+      "milestones": 42,
+      "status": "Disbursed"
+    },
+    {
+      "id": 3,
+      "country": "Spain",
+      "amount": 9.04,
+      "date": "2021-12",
+      "type": "Grant",
+      "milestones": 52,
+      "status": "Disbursed"
+    },
+    {
+      "id": 4,
+      "country": "Spain",
+      "amount": 12.0,
+      "date": "2022-06",
+      "type": "Grant",
+      "milestones": 40,
+      "status": "Disbursed"
+    },
+    {
+      "id": 9,
+      "country": "Spain",
+      "amount": 8.7,
+      "date": "2023-12",
+      "type": "Grant",
+      "milestones": 57,
+      "status": "Disbursed"
+    },
+    {
+      "id": 5,
+      "country": "France",
+      "amount": 5.1,
+      "date": "2021-08",
+      "type": "Grant",
+      "milestones": 17,
+      "status": "Disbursed"
+    },
+    {
+      "id": 6,
+      "country": "France",
+      "amount": 4.4,
+      "date": "2022-05",
+      "type": "Grant",
+      "milestones": 36,
+      "status": "Disbursed"
+    },
+    {
+      "id": 10,
+      "country": "France",
+      "amount": 5.1,
+      "date": "2025-02",
+      "type": "Grant",
+      "milestones": 41,
+      "status": "Disbursed"
+    },
+    {
+      "id": 7,
+      "country": "Germany",
+      "amount": 2.25,
+      "date": "2023-08",
+      "type": "Grant",
+      "milestones": 29,
+      "status": "Disbursed"
+    }
+  ],
+  "timelineEvents": [
+    {
+      "date": "20 Jan 2026",
+      "category": "Conference",
+      "isNew": true,
+      "title": "RRF Research Conference – Impact Assessment",
+      "description": "Commission research conference on macroeconomic and structural impacts.",
+      "color": "#9333ea",
+      "country": "EU"
+    },
+    {
+      "date": "10 Nov 2025",
+      "category": "Disbursement",
+      "title": "EUR 2.25 billion disbursed to Germany",
+      "description": "Following successful assessment of digital and green milestones.",
+      "color": "#16a34a",
+      "country": "Germany"
+    },
+    {
+      "date": "04 Jun 2025",
+      "category": "Communication",
+      "title": "NextGenerationEU – The road to 2026",
+      "description": "Commission published a Communication on steps for RRF completion.",
+      "color": "#004494",
+      "country": "EU"
+    },
+    {
+      "date": "15 May 2025",
+      "category": "Assessment",
+      "title": "Positive assessment of Spain's 4th payment request",
+      "description": "Successful assessment of 44 milestones under Spain's national RRP.",
+      "color": "#ea580c",
+      "country": "Spain"
+    },
+    {
+      "date": "15 Mar 2025",
+      "category": "Assessment",
+      "title": "Positive assessment of Portugal's 5th payment",
+      "description": "Successful assessment of 14 milestones under Portugal's national RRP.",
+      "color": "#ea580c",
+      "country": "Portugal"
+    },
+    {
+      "date": "10 Feb 2025",
+      "category": "Disbursement",
+      "title": "EUR 5.1 billion disbursed to France",
+      "description": "Payment for industrial decarbonization milestones achieved.",
+      "color": "#16a34a",
+      "country": "France"
+    },
+    {
+      "date": "19 Feb 2021",
+      "category": "Legislation",
+      "isHistoric": true,
+      "title": "RRF Regulation enters into force",
+      "description": "Legal framework for the recovery instrument established.",
+      "color": "#dc2626",
+      "country": "EU"
+    }
+  ],
+  "indicators": [
+    {
+      "id": "1",
+      "name": "Savings in annual primary energy consumption",
+      "value": "37,568,052",
+      "unit": "MWh/year",
+      "categories": [
+        "green",
+        "smart-growth"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Additional operational capacity installed for renewable energy",
+      "value": "62,444",
+      "unit": "MW (and 18 MW of hydrogen)",
+      "categories": [
+        "green",
+        "smart-growth"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Alternative fuels infrastructure (refuelling/recharging points)",
+      "value": "940,866",
+      "unit": "points",
+      "categories": [
+        "green",
+        "smart-growth"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Population benefiting from protection measures against floods, wildfires and climate-related disasters",
+      "value": "36,840,373",
+      "unit": "people",
+      "categories": [
+        "green",
+        "social-cohesion"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Additional dwellings with internet access via very high capacity networks",
+      "value": "17,565,216",
+      "unit": "dwellings",
+      "categories": [
+        "digital",
+        "social-cohesion"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Enterprises supported to develop or adopt digital products, services and processes",
+      "value": "1,448,877",
+      "unit": "enterprises",
+      "categories": [
+        "digital",
+        "smart-growth"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Users of new or upgraded public digital services, products and processes",
+      "value": "2,402,256,254",
+      "unit": "users",
+      "categories": [
+        "digital",
+        "health"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Researchers working in supported research facilities",
+      "value": "231,136",
+      "unit": "researchers",
+      "categories": [
+        "smart-growth"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Enterprises supported",
+      "value": "4,909,834",
+      "unit": "enterprises",
+      "categories": [
+        "smart-growth"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Number of participants in education or training",
+      "value": "30,713,886",
+      "unit": "participants",
+      "categories": [
+        "digital",
+        "social-cohesion",
+        "next-gen"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Number of people in employment or engaged in job search activities",
+      "value": "3,470,408",
+      "unit": "people",
+      "categories": [
+        "smart-growth",
+        "social-cohesion"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Capacity of new or modernized health care facilities",
+      "value": "60,232,747",
+      "unit": "users/year",
+      "categories": [
+        "social-cohesion",
+        "health"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Classroom capacity of new or modernized education and childcare facilities",
+      "value": "4,185,273",
+      "unit": "places",
+      "categories": [
+        "social-cohesion",
+        "next-gen"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Number of young people aged 15-29 receiving support",
+      "value": "12,676,811",
+      "unit": "young people",
+      "categories": [
+        "next-gen"
+      ]
+    }
+  ],
+  "countries": [
+    {
+      "id": "Portugal",
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "badge": "PT",
+      "plan_name": "Plano de Recuperação e Resiliência (PRR)",
+      "plan_approved": "Jun 2021",
+      "last_updated": "Jan 2026",
+      "stats": {
+        "allocation": 19.3,
+        "grants": 16.6,
+        "loans": 2.7,
+        "gdp_share": "7%"
+      },
+      "about": "Portugal's Recovery and Resilience Plan (PRR) focuses on three pillars: Resilience, Green Transition, and Digital Transformation.",
+      "repowereu": "Additional €0.9B for energy independence.",
+      "pillar_allocation": {
+        "green": 38,
+        "digital": 22,
+        "smart-growth": 32,
+        "social-cohesion": 27,
+        "health": 18,
+        "next-gen": 22
+      },
+      "keyReforms": [
+        "Labour market reform and unemployment support",
+        "Pension system sustainability reform",
+        "Digital courts and justice reform",
+        "Energy market liberalisation and regulation"
+      ],
+      "keyInvestments": [
+        {
+          "amt": "€2.7B",
+          "desc": "Building energy renovation and efficiency"
+        },
+        {
+          "amt": "€1.5B",
+          "desc": "Digital skills and public administration digitalisation"
+        },
+        {
+          "amt": "€0.9B",
+          "desc": "Renewable energy deployment and REPowerEU"
+        },
+        {
+          "amt": "€0.7B",
+          "desc": "Rail infrastructure and sustainable mobility"
+        }
+      ],
+      "outputIndicators": [
+        {
+          "icon": "🏠",
+          "value": "32,000",
+          "unit": "buildings",
+          "label": "Buildings renovated"
+        },
+        {
+          "icon": "💡",
+          "value": "480",
+          "unit": "MW",
+          "label": "Renewable capacity installed"
+        },
+        {
+          "icon": "🎓",
+          "value": "120,000",
+          "unit": "people",
+          "label": "Digital skills trained"
+        },
+        {
+          "icon": "🏥",
+          "value": "55",
+          "unit": "facilities",
+          "label": "Health centres upgraded"
+        }
+      ]
+    },
+    {
+      "id": "Spain",
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "badge": "ES",
+      "plan_name": "Plan de Recuperación, Transformación y Resiliencia (PRTR)",
+      "plan_approved": "Jun 2021",
+      "last_updated": "Jan 2026",
+      "stats": {
+        "allocation": 163,
+        "grants": 77.2,
+        "loans": 85.8,
+        "gdp_share": "12%"
+      },
+      "about": "Spain's plan is the largest in the EU, focusing on ecological transition and digital transformation.",
+      "repowereu": "Additional €2.6B for energy security.",
+      "pillar_allocation": {
+        "green": 40,
+        "digital": 28,
+        "smart-growth": 33,
+        "social-cohesion": 25,
+        "health": 18,
+        "next-gen": 22
+      },
+      "keyReforms": [
+        "Labour market reform (Ley del trabajo)",
+        "Pension sustainability and regulation",
+        "Housing market and rental legislation",
+        "Renewable energy regulatory framework"
+      ],
+      "keyInvestments": [
+        {
+          "amt": "€6.9B",
+          "desc": "Ecological transition and renewable energy"
+        },
+        {
+          "amt": "€8.3B",
+          "desc": "EV charging infrastructure rollout"
+        },
+        {
+          "amt": "€4.3B",
+          "desc": "SME digitalisation and 5G expansion"
+        },
+        {
+          "amt": "€3.8B",
+          "desc": "Social housing and energy-efficient renovation"
+        }
+      ],
+      "outputIndicators": [
+        {
+          "icon": "⚡",
+          "value": "12,400",
+          "unit": "MW",
+          "label": "Renewable capacity installed"
+        },
+        {
+          "icon": "🚗",
+          "value": "115,000",
+          "unit": "points",
+          "label": "EV charging points built"
+        },
+        {
+          "icon": "🏭",
+          "value": "48,000",
+          "unit": "enterprises",
+          "label": "SMEs supported"
+        },
+        {
+          "icon": "🎓",
+          "value": "680,000",
+          "unit": "people",
+          "label": "Vocational training participants"
+        }
+      ]
+    },
+    {
+      "id": "France",
+      "name": "France",
+      "flag": "🇫🇷",
+      "badge": "FR",
+      "plan_name": "Plan national de relance et de résilience (PNRR)",
+      "plan_approved": "Jul 2021",
+      "last_updated": "Jan 2026",
+      "stats": {
+        "allocation": 40.9,
+        "grants": 40.9,
+        "loans": 0,
+        "gdp_share": "1.6%"
+      },
+      "about": "France focuses on industrial competitiveness and ecological transition.",
+      "repowereu": "Additional €2.1B focused on heat pumps and nuclear.",
+      "pillar_allocation": {
+        "green": 46,
+        "digital": 21,
+        "smart-growth": 33,
+        "social-cohesion": 33,
+        "health": 20,
+        "next-gen": 24
+      },
+      "keyReforms": [
+        "Public finance and pension reform",
+        "Healthcare system reorganisation",
+        "Decentralisation of public services",
+        "Competition and business environment reform"
+      ],
+      "keyInvestments": [
+        {
+          "amt": "€5.8B",
+          "desc": "Hydrogen production and distribution"
+        },
+        {
+          "amt": "€3.4B",
+          "desc": "Thermal renovation of housing"
+        },
+        {
+          "amt": "€2.2B",
+          "desc": "Industrial decarbonisation (France 2030)"
+        },
+        {
+          "amt": "€1.8B",
+          "desc": "Healthcare resilience and digital health"
+        }
+      ],
+      "outputIndicators": [
+        {
+          "icon": "🏠",
+          "value": "700,000",
+          "unit": "homes",
+          "label": "Homes thermally renovated"
+        },
+        {
+          "icon": "⚗️",
+          "value": "6.5",
+          "unit": "GW",
+          "label": "Low-carbon hydrogen capacity"
+        },
+        {
+          "icon": "🏭",
+          "value": "9,000",
+          "unit": "enterprises",
+          "label": "Industrial firms decarbonised"
+        },
+        {
+          "icon": "🩺",
+          "value": "4,000",
+          "unit": "centres",
+          "label": "Medical centres upgraded"
+        }
+      ]
+    },
+    {
+      "id": "Germany",
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "badge": "DE",
+      "plan_name": "Deutscher Aufbau- und Resilienzplan (DARP)",
+      "plan_approved": "Jul 2021",
+      "last_updated": "Jan 2026",
+      "stats": {
+        "allocation": 28.0,
+        "grants": 28.0,
+        "loans": 0,
+        "gdp_share": "0.7%"
+      },
+      "about": "Germany's plan focuses on climate and digital transition.",
+      "pillar_allocation": {
+        "green": 42,
+        "digital": 52,
+        "smart-growth": 25,
+        "social-cohesion": 15,
+        "health": 10,
+        "next-gen": 20
+      },
+      "keyReforms": [
+        "Investment and innovation framework modernisation",
+        "Energy system and grid regulation reform",
+        "Social care and family service reform",
+        "Education and skills training system reform"
+      ],
+      "keyInvestments": [
+        {
+          "amt": "€4.2B",
+          "desc": "Wind and solar energy expansion"
+        },
+        {
+          "amt": "€3.0B",
+          "desc": "Hydrogen technologies and networks"
+        },
+        {
+          "amt": "€2.1B",
+          "desc": "Schools and education digitalisation"
+        },
+        {
+          "amt": "€1.8B",
+          "desc": "Rail transport and sustainable mobility"
+        }
+      ],
+      "outputIndicators": [
+        {
+          "icon": "💨",
+          "value": "8,200",
+          "unit": "MW",
+          "label": "Wind capacity added"
+        },
+        {
+          "icon": "🖥️",
+          "value": "40,000",
+          "unit": "schools",
+          "label": "Schools digitalised"
+        },
+        {
+          "icon": "🚆",
+          "value": "1,300",
+          "unit": "km",
+          "label": "Rail network upgraded"
+        },
+        {
+          "icon": "♻️",
+          "value": "850",
+          "unit": "sites",
+          "label": "Circular economy projects"
+        }
+      ]
+    }
+  ],
+  "pillars": [
+    {
+      "id": "green",
+      "name": "Green Transition",
+      "shortName": "Green",
+      "color": "#00A63E",
+      "icon": "🌸",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=80",
+      "description": "Making Europe the first climate-neutral continent by 2050.",
+      "fullDescription": "Reflecting the European Green Deal as Europe's sustainable growth strategy and the importance to achieve climate neutrality by 2050...",
+      "budget": 318500000000,
+      "milestones": 2713,
+      "measures": 1200,
+      "breakdown": [
+        {
+          "label": "Energy efficiency",
+          "amount": 89180000000
+        },
+        {
+          "label": "Renewable energy",
+          "amount": 73255000000
+        },
+        {
+          "label": "Sustainable transport",
+          "amount": 66885000000
+        },
+        {
+          "label": "Building renovation",
+          "amount": 44590000000
+        }
+      ],
+      "keyInvestments": [
+        {
+          "country": "Spain",
+          "flag": "🇪🇸",
+          "description": "Electric vehicle charging infrastructure",
+          "amount": 8300000000
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹",
+          "description": "Metropolitan networks expansion",
+          "amount": 6500000000
+        },
+        {
+          "country": "France",
+          "flag": "🇫🇷",
+          "description": "Hydrogen production and distribution",
+          "amount": 5800000000
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪",
+          "description": "Wind energy expansion",
+          "amount": 4200000000
+        }
+      ]
+    },
+    {
+      "id": "digital",
+      "name": "Digital Transformation",
+      "shortName": "Digital",
+      "color": "#155DFC",
+      "icon": "🤖",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+      "description": "Shaping Europe's digital future with innovation and security.",
+      "fullDescription": "Digital transformation is a key driver for productivity and innovation...",
+      "budget": 150000000000,
+      "milestones": 1842,
+      "measures": 780,
+      "breakdown": [
+        {
+          "label": "Digital public services",
+          "amount": 45000000000
+        },
+        {
+          "label": "5G & connectivity",
+          "amount": 37500000000
+        },
+        {
+          "label": "Cybersecurity",
+          "amount": 30000000000
+        },
+        {
+          "label": "Digital skills",
+          "amount": 22500000000
+        }
+      ],
+      "keyInvestments": [
+        {
+          "country": "Spain",
+          "flag": "🇪🇸",
+          "description": "SME digitalisation and 5G expansion",
+          "amount": 4300000000
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪",
+          "description": "Schools and education digitalisation",
+          "amount": 2100000000
+        },
+        {
+          "country": "France",
+          "flag": "🇫🇷",
+          "description": "Healthcare resilience and digital health",
+          "amount": 1800000000
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹",
+          "description": "Digital skills and public administration",
+          "amount": 1500000000
+        }
+      ]
+    },
+    {
+      "id": "social-cohesion",
+      "name": "Social & Territorial Cohesion",
+      "shortName": "Social",
+      "color": "#9810FA",
+      "icon": "👥",
+      "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=400&q=80",
+      "description": "Building an economy that works for people.",
+      "fullDescription": "Ensuring that the recovery is fair and inclusive for all regions...",
+      "budget": 120000000000,
+      "milestones": 1560,
+      "measures": 640,
+      "breakdown": [
+        {
+          "label": "Labour market & employment",
+          "amount": 42000000000
+        },
+        {
+          "label": "Social housing",
+          "amount": 30000000000
+        },
+        {
+          "label": "Education & training",
+          "amount": 27600000000
+        },
+        {
+          "label": "Regional development",
+          "amount": 20400000000
+        }
+      ],
+      "keyInvestments": [
+        {
+          "country": "Spain",
+          "flag": "🇪🇸",
+          "description": "Social housing and energy-efficient renovation",
+          "amount": 3800000000
+        },
+        {
+          "country": "France",
+          "flag": "🇫🇷",
+          "description": "Healthcare resilience and social care reform",
+          "amount": 1800000000
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹",
+          "description": "Rail infrastructure and sustainable mobility",
+          "amount": 700000000
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪",
+          "description": "Social care and family service reform",
+          "amount": 500000000
+        }
+      ]
+    },
+    {
+      "id": "smart-growth",
+      "name": "Smart & Sustainable Growth",
+      "shortName": "Growth",
+      "color": "#E17100",
+      "icon": "📈",
+      "image": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=400&q=80",
+      "description": "Promoting ambitious reforms and investments.",
+      "fullDescription": "Strengthening the competitiveness and resilience of the European economy...",
+      "budget": 180000000000,
+      "milestones": 2100,
+      "measures": 910,
+      "breakdown": [
+        {
+          "label": "R&D and innovation",
+          "amount": 63000000000
+        },
+        {
+          "label": "SME competitiveness",
+          "amount": 45000000000
+        },
+        {
+          "label": "Industrial strategy",
+          "amount": 40500000000
+        },
+        {
+          "label": "Infrastructure",
+          "amount": 31500000000
+        }
+      ],
+      "keyInvestments": [
+        {
+          "country": "Spain",
+          "flag": "🇪🇸",
+          "description": "Ecological transition and renewable energy",
+          "amount": 6900000000
+        },
+        {
+          "country": "France",
+          "flag": "🇫🇷",
+          "description": "Hydrogen production and distribution",
+          "amount": 5800000000
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪",
+          "description": "Hydrogen technologies and networks",
+          "amount": 3000000000
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹",
+          "description": "Capitalization fund for SMEs",
+          "amount": 900000000
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Health & Resilience",
+      "shortName": "Health",
+      "color": "#00E1C7",
+      "icon": "🏛️",
+      "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=400&q=80",
+      "description": "Increasing crisis preparedness and response capacity.",
+      "fullDescription": "Improving the capacity of health systems to respond to crises...",
+      "budget": 65000000000,
+      "milestones": 820,
+      "measures": 350,
+      "breakdown": [
+        {
+          "label": "Health infrastructure",
+          "amount": 22750000000
+        },
+        {
+          "label": "Crisis preparedness",
+          "amount": 16250000000
+        },
+        {
+          "label": "Digital health",
+          "amount": 13000000000
+        },
+        {
+          "label": "Medicines & R&D",
+          "amount": 13000000000
+        }
+      ],
+      "keyInvestments": [
+        {
+          "country": "France",
+          "flag": "🇫🇷",
+          "description": "Healthcare resilience and digital health",
+          "amount": 1800000000
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹",
+          "description": "Health centres upgraded",
+          "amount": 800000000
+        },
+        {
+          "country": "Spain",
+          "flag": "🇪🇸",
+          "description": "Hospital digitalisation and telemedicine",
+          "amount": 700000000
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪",
+          "description": "Pandemic preparedness research infrastructure",
+          "amount": 600000000
+        }
+      ]
+    },
+    {
+      "id": "next-gen",
+      "name": "Next Generation",
+      "shortName": "Next Gen",
+      "color": "#FFDB59",
+      "icon": "🎓",
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80",
+      "description": "Improving access to education and employment support.",
+      "fullDescription": "Investing in the future of the younger generation...",
+      "budget": 95000000000,
+      "milestones": 1100,
+      "measures": 470,
+      "breakdown": [
+        {
+          "label": "Education & skills",
+          "amount": 38000000000
+        },
+        {
+          "label": "Youth employment",
+          "amount": 28500000000
+        },
+        {
+          "label": "Childcare facilities",
+          "amount": 19000000000
+        },
+        {
+          "label": "Apprenticeships",
+          "amount": 9500000000
+        }
+      ],
+      "keyInvestments": [
+        {
+          "country": "Spain",
+          "flag": "🇪🇸",
+          "description": "Vocational training participants",
+          "amount": 2100000000
+        },
+        {
+          "country": "Germany",
+          "flag": "🇩🇪",
+          "description": "Education and skills training reform",
+          "amount": 1800000000
+        },
+        {
+          "country": "France",
+          "flag": "🇫🇷",
+          "description": "Youth employment and apprenticeship fund",
+          "amount": 1200000000
+        },
+        {
+          "country": "Portugal",
+          "flag": "🇵🇹",
+          "description": "Digital skills for young adults",
+          "amount": 600000000
+        }
+      ]
+    }
+  ]
+}
