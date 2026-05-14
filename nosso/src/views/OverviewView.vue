@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, ref } from 'vue'
 import { storeToRefs } from 'pinia'
 import { usePrrStore } from '../stores/prrStore'
 import { useRouter } from 'vue-router'
@@ -8,12 +8,24 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Tooltip, Lege
 import PageHeader from '../components/PageHeader.vue'
 import KpiCard from '../components/KpiCard.vue'
 import LoadingSpinner from '../components/LoadingSpinner.vue'
+import MapaEuropa from '../components/MapaEuropa.vue'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend)
 
 const store = usePrrStore()
 const { globalStats, paises, pilares, loading } = storeToRefs(store)
 const router = useRouter()
+
+const paisSelecionado = ref(null)
+
+function handleSelecionarPais(id) {
+  if (id) {
+    paisSelecionado.value = id
+    router.push('/paises/' + id)
+  } else {
+    paisSelecionado.value = null
+  }
+}
 
 onMounted(() => store.carregarTudo())
 
@@ -65,34 +77,27 @@ const chartOpts = {
     <div v-else-if="globalStats">
       <!-- KPIs -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <KpiCard
-          icone="💰"
-          label="Total RRF"
-          :valor="`€${globalStats.totalRRF}B`"
-          sub="Fundo total disponível"
-          cor="#1B3A6B"
-        />
-        <KpiCard
-          icone="🎁"
-          label="Subvenções"
-          :valor="`€${globalStats.grants}B`"
-          sub="Não reembolsáveis"
-          cor="#2E7D32"
-        />
-        <KpiCard
-          icone="🏦"
-          label="Empréstimos"
-          :valor="`€${globalStats.loans}B`"
-          sub="Reembolsáveis"
-          cor="#E65100"
-        />
-        <KpiCard
-          icone="✅"
-          label="Desembolsado"
-          :valor="`€${globalStats.disbursed}B`"
-          :sub="`${resumo.taxa}% do total`"
-          cor="#6A1B9A"
-        />
+        <KpiCard icone="💰" label="Total RRF" :valor="`€${globalStats.totalRRF}B`" sub="Fundo total disponível" cor="#1B3A6B" />
+        <KpiCard icone="🎁" label="Subvenções" :valor="`€${globalStats.grants}B`" sub="Não reembolsáveis" cor="#2E7D32" />
+        <KpiCard icone="🏦" label="Empréstimos" :valor="`€${globalStats.loans}B`" sub="Reembolsáveis" cor="#E65100" />
+        <KpiCard icone="✅" label="Desembolsado" :valor="`€${globalStats.disbursed}B`" :sub="`${resumo.taxa}% do total`" cor="#6A1B9A" />
+      </div>
+
+      <!-- Mapa interativo -->
+      <div class="bg-white rounded-xl border border-prr-border shadow-sm p-5 mb-8">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-sm font-bold text-prr-blue">🗺️ Mapa da Europa — Execução do RRF</h3>
+            <p class="text-xs text-slate-400 mt-0.5">
+              {{ paisSelecionado ? 'Clique novamente para desselecionar' : 'Clique num país com dados para ver o detalhe' }}
+            </p>
+          </div>
+          <span v-if="paisSelecionado" class="text-xs bg-prr-gold/20 text-prr-blue font-semibold px-3 py-1 rounded-full border border-prr-gold/40">
+            {{ paises.find(p => p.id === paisSelecionado)?.bandeira }}
+            {{ paises.find(p => p.id === paisSelecionado)?.nome }}
+          </span>
+        </div>
+        <MapaEuropa :pais-selecionado="paisSelecionado" @selecionar-pais="handleSelecionarPais" />
       </div>
 
       <!-- Gráfico de barras países -->
@@ -149,9 +154,9 @@ const chartOpts = {
           </div>
           <div class="flex justify-between text-xs text-slate-500 mb-1">
             <span>Desembolso</span>
-            <span class="font-semibold text-prr-blue"
-              >{{ ((p.desembolsado / p.alocacao) * 100).toFixed(1) }}%</span
-            >
+            <span class="font-semibold text-prr-blue">
+              {{ ((p.desembolsado / p.alocacao) * 100).toFixed(1) }}%
+            </span>
           </div>
           <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
             <div
