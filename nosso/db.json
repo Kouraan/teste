@@ -1,0 +1,369 @@
+{
+  "globalStats": {
+    "totalRRF": 650.1,
+    "grants": 385.8,
+    "loans": 264.3,
+    "disbursed": 240.5,
+    "countries": 27,
+    "milestones": 10800
+  },
+  "paises": [
+    {
+      "id": "portugal",
+      "nome": "Portugal",
+      "sigla": "PT",
+      "bandeira": "🇵🇹",
+      "planNome": "Plano de Recuperação e Resiliência (PRR)",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O PRR de Portugal foca-se em três pilares: Resiliência, Transição Verde e Transformação Digital, com um envelope financeiro de €16,6B em subvenções e €2,7B em empréstimos.",
+      "repowereu": "Capítulo REPowerEU adicional de €0,9B para independência energética.",
+      "alocacao": 19.3,
+      "subvencoes": 16.6,
+      "emprestimos": 2.7,
+      "pibShare": "7%",
+      "desembolsado": 6.46,
+      "pilaresAlocacao": {
+        "verde": 38,
+        "digital": 22,
+        "social": 27,
+        "crescimento": 32,
+        "saude": 18,
+        "geracao": 22
+      },
+      "reformasChave": [
+        "Reforma do mercado de trabalho e apoio ao desemprego",
+        "Sustentabilidade do sistema de pensões",
+        "Digitalização dos tribunais e justiça",
+        "Liberalização e regulação do mercado de energia"
+      ],
+      "investimentosChave": [
+        { "valor": "€2,7B", "descricao": "Renovação energética de edifícios" },
+        { "valor": "€1,5B", "descricao": "Competências digitais e digitalização da AP" },
+        { "valor": "€0,9B", "descricao": "Energias renováveis e REPowerEU" },
+        { "valor": "€0,7B", "descricao": "Infraestrutura ferroviária e mobilidade" }
+      ],
+      "indicadores": [
+        { "icone": "🏠", "valor": "32.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "⚡", "valor": "480", "unidade": "MW", "label": "Capacidade renovável instalada" },
+        { "icone": "🎓", "valor": "120.000", "unidade": "pessoas", "label": "Formações digitais" },
+        { "icone": "🏥", "valor": "55", "unidade": "centros", "label": "Centros de saúde modernizados" }
+      ]
+    },
+    {
+      "id": "espanha",
+      "nome": "Espanha",
+      "sigla": "ES",
+      "bandeira": "🇪🇸",
+      "planNome": "Plan de Recuperación, Transformación y Resiliencia (PRTR)",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O PRTR de Espanha é o maior da UE, com €163B totais, focado na transição ecológica e digital.",
+      "repowereu": "Capítulo adicional de €2,6B para segurança energética.",
+      "alocacao": 163,
+      "subvencoes": 77.2,
+      "emprestimos": 85.8,
+      "pibShare": "12%",
+      "desembolsado": 29.74,
+      "pilaresAlocacao": {
+        "verde": 40,
+        "digital": 28,
+        "social": 25,
+        "crescimento": 33,
+        "saude": 18,
+        "geracao": 22
+      },
+      "reformasChave": [
+        "Reforma do mercado de trabalho (Ley del trabajo)",
+        "Regulação e sustentabilidade das pensões",
+        "Legislação de habitação e arrendamento",
+        "Quadro regulatório para energias renováveis"
+      ],
+      "investimentosChave": [
+        { "valor": "€8,3B", "descricao": "Infraestrutura de carregamento VE" },
+        { "valor": "€6,9B", "descricao": "Transição ecológica e renováveis" },
+        { "valor": "€4,3B", "descricao": "Digitalização PME e expansão 5G" },
+        { "valor": "€3,8B", "descricao": "Habitação social e renovação energética" }
+      ],
+      "indicadores": [
+        { "icone": "⚡", "valor": "12.400", "unidade": "MW", "label": "Capacidade renovável instalada" },
+        { "icone": "🚗", "valor": "115.000", "unidade": "pontos", "label": "Pontos de carregamento VE" },
+        { "icone": "🏭", "valor": "48.000", "unidade": "empresas", "label": "PME apoiadas" },
+        { "icone": "🎓", "valor": "680.000", "unidade": "pessoas", "label": "Formação profissional" }
+      ]
+    },
+    {
+      "id": "franca",
+      "nome": "França",
+      "sigla": "FR",
+      "bandeira": "🇫🇷",
+      "planNome": "Plan national de relance et de résilience (PNRR)",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "A França foca-se na competitividade industrial e na transição ecológica com €40,9B em subvenções.",
+      "repowereu": "€2,1B adicionais para bombas de calor e nuclear.",
+      "alocacao": 40.9,
+      "subvencoes": 40.9,
+      "emprestimos": 0,
+      "pibShare": "1.6%",
+      "desembolsado": 14.6,
+      "pilaresAlocacao": {
+        "verde": 46,
+        "digital": 21,
+        "social": 33,
+        "crescimento": 33,
+        "saude": 20,
+        "geracao": 24
+      },
+      "reformasChave": [
+        "Reforma das finanças públicas e pensões",
+        "Reorganização do sistema de saúde",
+        "Descentralização dos serviços públicos",
+        "Reforma da concorrência e ambiente empresarial"
+      ],
+      "investimentosChave": [
+        { "valor": "€5,8B", "descricao": "Produção e distribuição de hidrogénio" },
+        { "valor": "€3,4B", "descricao": "Renovação térmica de habitação" },
+        { "valor": "€2,2B", "descricao": "Descarbonização industrial (France 2030)" },
+        { "valor": "€1,8B", "descricao": "Resiliência da saúde e saúde digital" }
+      ],
+      "indicadores": [
+        { "icone": "🏠", "valor": "700.000", "unidade": "habitações", "label": "Habitações renovadas" },
+        { "icone": "⚗️", "valor": "6,5", "unidade": "GW", "label": "Capacidade hidrogénio" },
+        { "icone": "🏭", "valor": "9.000", "unidade": "empresas", "label": "Empresas descarbonizadas" },
+        { "icone": "🩺", "valor": "4.000", "unidade": "centros", "label": "Centros médicos melhorados" }
+      ]
+    },
+    {
+      "id": "alemanha",
+      "nome": "Alemanha",
+      "sigla": "DE",
+      "bandeira": "🇩🇪",
+      "planNome": "Deutscher Aufbau- und Resilienzplan (DARP)",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "A Alemanha foca-se na transição climática e digital com €28B em subvenções.",
+      "repowereu": "Capítulo de hidrogénio e redes de €1,5B.",
+      "alocacao": 28.0,
+      "subvencoes": 28.0,
+      "emprestimos": 0,
+      "pibShare": "0.7%",
+      "desembolsado": 2.25,
+      "pilaresAlocacao": {
+        "verde": 42,
+        "digital": 52,
+        "social": 15,
+        "crescimento": 25,
+        "saude": 10,
+        "geracao": 20
+      },
+      "reformasChave": [
+        "Modernização do quadro de investimento e inovação",
+        "Reforma da regulação do sistema energético",
+        "Reforma dos cuidados sociais e família",
+        "Reforma da educação e formação profissional"
+      ],
+      "investimentosChave": [
+        { "valor": "€4,2B", "descricao": "Expansão de energia eólica e solar" },
+        { "valor": "€3,0B", "descricao": "Tecnologias e redes de hidrogénio" },
+        { "valor": "€2,1B", "descricao": "Digitalização de escolas" },
+        { "valor": "€1,8B", "descricao": "Transporte ferroviário sustentável" }
+      ],
+      "indicadores": [
+        { "icone": "💨", "valor": "8.200", "unidade": "MW", "label": "Capacidade eólica adicionada" },
+        { "icone": "🖥️", "valor": "40.000", "unidade": "escolas", "label": "Escolas digitalizadas" },
+        { "icone": "🚆", "valor": "1.300", "unidade": "km", "label": "Rede ferroviária modernizada" },
+        { "icone": "♻️", "valor": "850", "unidade": "projetos", "label": "Projetos economia circular" }
+      ]
+    }
+  ],
+  "pilares": [
+    {
+      "id": "verde",
+      "nome": "Transição Verde",
+      "shortName": "Verde",
+      "cor": "#2E7D32",
+      "icone": "🌿",
+      "descricao": "Tornar a Europa o primeiro continente neutro em carbono até 2050.",
+      "orcamento": 318500000000,
+      "milestones": 2713,
+      "medidas": 1200,
+      "breakdown": [
+        { "label": "Eficiência energética", "valor": 89180000000 },
+        { "label": "Energia renovável", "valor": 73255000000 },
+        { "label": "Transporte sustentável", "valor": 66885000000 },
+        { "label": "Renovação de edifícios", "valor": 44590000000 }
+      ]
+    },
+    {
+      "id": "digital",
+      "nome": "Transformação Digital",
+      "shortName": "Digital",
+      "cor": "#1565C0",
+      "icone": "💻",
+      "descricao": "Moldar o futuro digital da Europa com inovação e segurança.",
+      "orcamento": 150000000000,
+      "milestones": 1842,
+      "medidas": 780,
+      "breakdown": [
+        { "label": "Serviços públicos digitais", "valor": 45000000000 },
+        { "label": "5G e conectividade", "valor": 37500000000 },
+        { "label": "Cibersegurança", "valor": 30000000000 },
+        { "label": "Competências digitais", "valor": 22500000000 }
+      ]
+    },
+    {
+      "id": "social",
+      "nome": "Coesão Social e Territorial",
+      "shortName": "Social",
+      "cor": "#6A1B9A",
+      "icone": "🤝",
+      "descricao": "Construir uma economia que funcione para as pessoas.",
+      "orcamento": 120000000000,
+      "milestones": 1560,
+      "medidas": 640,
+      "breakdown": [
+        { "label": "Mercado de trabalho", "valor": 42000000000 },
+        { "label": "Habitação social", "valor": 30000000000 },
+        { "label": "Educação e formação", "valor": 27600000000 },
+        { "label": "Desenvolvimento regional", "valor": 20400000000 }
+      ]
+    },
+    {
+      "id": "crescimento",
+      "nome": "Crescimento Inteligente e Sustentável",
+      "shortName": "Crescimento",
+      "cor": "#E65100",
+      "icone": "📈",
+      "descricao": "Promover reformas e investimentos ambiciosos.",
+      "orcamento": 180000000000,
+      "milestones": 2100,
+      "medidas": 910,
+      "breakdown": [
+        { "label": "I&D e inovação", "valor": 63000000000 },
+        { "label": "Competitividade PME", "valor": 45000000000 },
+        { "label": "Estratégia industrial", "valor": 40500000000 },
+        { "label": "Infraestruturas", "valor": 31500000000 }
+      ]
+    },
+    {
+      "id": "saude",
+      "nome": "Saúde e Resiliência Institucional",
+      "shortName": "Saúde",
+      "cor": "#00695C",
+      "icone": "🏛️",
+      "descricao": "Aumentar a capacidade de preparação e resposta a crises.",
+      "orcamento": 65000000000,
+      "milestones": 820,
+      "medidas": 350,
+      "breakdown": [
+        { "label": "Infraestrutura de saúde", "valor": 22750000000 },
+        { "label": "Preparação para crises", "valor": 16250000000 },
+        { "label": "Saúde digital", "valor": 13000000000 },
+        { "label": "Medicamentos e I&D", "valor": 13000000000 }
+      ]
+    },
+    {
+      "id": "geracao",
+      "nome": "Próxima Geração",
+      "shortName": "Próx. Geração",
+      "cor": "#F9A825",
+      "icone": "🎓",
+      "descricao": "Investir no futuro da geração mais jovem.",
+      "orcamento": 95000000000,
+      "milestones": 1100,
+      "medidas": 470,
+      "breakdown": [
+        { "label": "Educação e competências", "valor": 38000000000 },
+        { "label": "Emprego jovem", "valor": 28500000000 },
+        { "label": "Creches e ensino pré-escolar", "valor": 19000000000 },
+        { "label": "Estágios e aprendizagem", "valor": 9500000000 }
+      ]
+    }
+  ],
+  "milestones": [
+    { "id": 1, "pais": "Portugal", "paisId": "portugal", "pilar": "verde", "descricao": "Renovação energética de edifícios", "estado": "concluido", "prazo": "2023-Q2", "csr": "CSR 3 de 2020" },
+    { "id": 2, "pais": "Portugal", "paisId": "portugal", "pilar": "digital", "descricao": "Formação em competências digitais", "estado": "concluido", "prazo": "2023-Q4", "csr": "CSR 2 de 2019" },
+    { "id": 3, "pais": "Portugal", "paisId": "portugal", "pilar": "digital", "descricao": "Digitalização da administração pública", "estado": "em-curso", "prazo": "2024-Q2", "csr": "CSR 4 de 2020" },
+    { "id": 4, "pais": "Portugal", "paisId": "portugal", "pilar": "crescimento", "descricao": "Fundo de capitalização para PME", "estado": "pendente", "prazo": "2024-Q3", "csr": "CSR 3 de 2020" },
+    { "id": 5, "pais": "Espanha", "paisId": "espanha", "pilar": "verde", "descricao": "Reforma regulatória de energias renováveis", "estado": "concluido", "prazo": "2023-Q1", "csr": "CSR 1 de 2020" },
+    { "id": 6, "pais": "Espanha", "paisId": "espanha", "pilar": "social", "descricao": "Implementação da reforma do mercado de trabalho", "estado": "concluido", "prazo": "2023-Q2", "csr": "CSR 2 de 2020" },
+    { "id": 7, "pais": "Espanha", "paisId": "espanha", "pilar": "digital", "descricao": "Expansão da rede 5G", "estado": "em-curso", "prazo": "2024-Q4", "csr": "CSR 3 de 2020" },
+    { "id": 8, "pais": "França", "paisId": "franca", "pilar": "verde", "descricao": "Renovação térmica de habitação", "estado": "concluido", "prazo": "2023-Q3", "csr": "CSR 3 de 2019" },
+    { "id": 9, "pais": "França", "paisId": "franca", "pilar": "crescimento", "descricao": "Estratégia de hidrogénio verde", "estado": "em-curso", "prazo": "2024-Q2", "csr": "CSR 1 de 2021" },
+    { "id": 10, "pais": "Alemanha", "paisId": "alemanha", "pilar": "digital", "descricao": "Digitalização de salas de aula", "estado": "concluido", "prazo": "2023-Q4", "csr": "CSR 2 de 2020" },
+    { "id": 11, "pais": "Alemanha", "paisId": "alemanha", "pilar": "verde", "descricao": "Implementação da estratégia de hidrogénio", "estado": "em-curso", "prazo": "2024-Q3", "csr": "CSR 1 de 2020" }
+  ],
+  "desembolsos": [
+    { "id": 1, "paisId": "portugal", "pais": "Portugal", "montante": 2.22, "data": "2022-06", "tipo": "Subvenção", "milestones": 38, "estado": "Desembolsado" },
+    { "id": 2, "paisId": "portugal", "pais": "Portugal", "montante": 1.84, "data": "2023-02", "tipo": "Subvenção", "milestones": 27, "estado": "Desembolsado" },
+    { "id": 3, "paisId": "portugal", "pais": "Portugal", "montante": 2.40, "data": "2023-09", "tipo": "Subvenção", "milestones": 42, "estado": "Desembolsado" },
+    { "id": 4, "paisId": "espanha", "pais": "Espanha", "montante": 9.04, "data": "2021-12", "tipo": "Subvenção", "milestones": 52, "estado": "Desembolsado" },
+    { "id": 5, "paisId": "espanha", "pais": "Espanha", "montante": 12.0, "data": "2022-06", "tipo": "Subvenção", "milestones": 40, "estado": "Desembolsado" },
+    { "id": 6, "paisId": "espanha", "pais": "Espanha", "montante": 8.70, "data": "2023-12", "tipo": "Subvenção", "milestones": 57, "estado": "Desembolsado" },
+    { "id": 7, "paisId": "franca", "pais": "França", "montante": 5.10, "data": "2021-08", "tipo": "Subvenção", "milestones": 17, "estado": "Desembolsado" },
+    { "id": 8, "paisId": "franca", "pais": "França", "montante": 4.40, "data": "2022-05", "tipo": "Subvenção", "milestones": 36, "estado": "Desembolsado" },
+    { "id": 9, "paisId": "franca", "pais": "França", "montante": 5.10, "data": "2025-02", "tipo": "Subvenção", "milestones": 41, "estado": "Desembolsado" },
+    { "id": 10, "paisId": "alemanha", "pais": "Alemanha", "montante": 2.25, "data": "2023-08", "tipo": "Subvenção", "milestones": 29, "estado": "Desembolsado" }
+  ],
+  "indicadoresComuns": [
+    { "id": "IC1", "nome": "Poupança em consumo de energia primária", "valor": "37.568.052", "unidade": "MWh/ano", "categorias": ["verde", "crescimento"] },
+    { "id": "IC2", "nome": "Capacidade adicional de energia renovável", "valor": "62.444", "unidade": "MW", "categorias": ["verde", "crescimento"] },
+    { "id": "IC3", "nome": "Infraestruturas de combustíveis alternativos", "valor": "940.866", "unidade": "pontos", "categorias": ["verde", "crescimento"] },
+    { "id": "IC4", "nome": "População protegida de cheias e incêndios", "valor": "36.840.373", "unidade": "pessoas", "categorias": ["verde", "social"] },
+    { "id": "IC5", "nome": "Habitações com acesso a redes de alta capacidade", "valor": "17.565.216", "unidade": "habitações", "categorias": ["digital", "social"] },
+    { "id": "IC6", "nome": "Empresas com produtos/serviços digitais", "valor": "1.448.877", "unidade": "empresas", "categorias": ["digital", "crescimento"] },
+    { "id": "IC7", "nome": "Utilizadores de serviços públicos digitais", "valor": "2.402.256.254", "unidade": "utilizadores", "categorias": ["digital", "saude"] },
+    { "id": "IC8", "nome": "Investigadores em instalações apoiadas", "valor": "231.136", "unidade": "investigadores", "categorias": ["crescimento"] },
+    { "id": "IC9", "nome": "Empresas apoiadas (total)", "valor": "4.909.834", "unidade": "empresas", "categorias": ["crescimento"] },
+    { "id": "IC10", "nome": "Participantes em educação ou formação", "valor": "30.713.886", "unidade": "participantes", "categorias": ["digital", "social", "geracao"] },
+    { "id": "IC11", "nome": "Pessoas empregadas ou em busca de emprego", "valor": "3.470.408", "unidade": "pessoas", "categorias": ["crescimento", "social"] },
+    { "id": "IC12", "nome": "Capacidade de centros de saúde novos/modernizados", "valor": "60.232.747", "unidade": "utentes/ano", "categorias": ["social", "saude"] },
+    { "id": "IC13", "nome": "Lugares em creches e estabelecimentos de ensino", "valor": "4.185.273", "unidade": "lugares", "categorias": ["social", "geracao"] },
+    { "id": "IC14", "nome": "Jovens dos 15-29 anos apoiados", "valor": "12.676.811", "unidade": "jovens", "categorias": ["geracao"] }
+  ],
+  "cronologia": [
+    {
+      "id": 1, "data": "20 Jan 2026", "categoria": "Conferência", "novo": true,
+      "titulo": "Conferência de Investigação RRF – Avaliação de Impacto",
+      "descricao": "Conferência da Comissão sobre impactos macroeconómicos e estruturais.",
+      "cor": "#6A1B9A", "pais": "UE"
+    },
+    {
+      "id": 2, "data": "10 Nov 2025", "categoria": "Desembolso",
+      "titulo": "€2,25 mil milhões desembolsados para a Alemanha",
+      "descricao": "Após avaliação bem-sucedida de milestones digitais e verdes.",
+      "cor": "#2E7D32", "pais": "Alemanha"
+    },
+    {
+      "id": 3, "data": "04 Jun 2025", "categoria": "Comunicação",
+      "titulo": "NextGenerationEU — O caminho até 2026",
+      "descricao": "A Comissão publicou uma Comunicação sobre os passos para a conclusão do RRF.",
+      "cor": "#1B3A6B", "pais": "UE"
+    },
+    {
+      "id": 4, "data": "15 Mai 2025", "categoria": "Avaliação",
+      "titulo": "Avaliação positiva do 4.º pedido de pagamento da Espanha",
+      "descricao": "Avaliação bem-sucedida de 44 milestones no quadro do PRR espanhol.",
+      "cor": "#E65100", "pais": "Espanha"
+    },
+    {
+      "id": 5, "data": "15 Mar 2025", "categoria": "Avaliação",
+      "titulo": "Avaliação positiva do 5.º pagamento a Portugal",
+      "descricao": "Avaliação bem-sucedida de 14 milestones no quadro do PRR português.",
+      "cor": "#E65100", "pais": "Portugal"
+    },
+    {
+      "id": 6, "data": "10 Fev 2025", "categoria": "Desembolso",
+      "titulo": "€5,1 mil milhões desembolsados para a França",
+      "descricao": "Pagamento por milestones de descarbonização industrial alcançados.",
+      "cor": "#2E7D32", "pais": "França"
+    },
+    {
+      "id": 7, "data": "19 Fev 2021", "categoria": "Legislação", "historico": true,
+      "titulo": "Regulamento RRF entra em vigor",
+      "descricao": "Estabelecido o quadro jurídico do instrumento de recuperação.",
+      "cor": "#B71C1C", "pais": "UE"
+    }
+  ]
+}
