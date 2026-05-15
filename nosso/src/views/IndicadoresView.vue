@@ -5,6 +5,7 @@ import { usePrrStore } from '../stores/prrStore'
 import PageHeader from '../components/PageHeader.vue'
 import LoadingSpinner from '../components/LoadingSpinner.vue'
 import PilarBadge from '../components/PilarBadge.vue'
+import ExportButton from '../components/ExportButton.vue'
 
 const store = usePrrStore()
 const { indicadoresComuns, loading } = storeToRefs(store)
@@ -25,11 +26,16 @@ const categorias = computed(() => {
 
 <template>
   <div>
-    <PageHeader
-      icone="📊"
-      titulo="Indicadores Comuns"
-      descricao="Indicadores de output comuns do RRF, reportados pelos Estados-Membros duas vezes por ano à Comissão Europeia."
-    />
+    <div class="flex items-start justify-between mb-8 gap-4">
+      <PageHeader
+        icone="📊"
+        titulo="Indicadores Comuns"
+        descricao="Indicadores de output comuns do RRF, reportados pelos Estados-Membros duas vezes por ano à Comissão Europeia."
+      />
+      <div class="pt-1 flex-shrink-0">
+        <ExportButton :data="filtrados" filename="indicadores-comuns" />
+      </div>
+    </div>
 
     <LoadingSpinner v-if="loading" />
 

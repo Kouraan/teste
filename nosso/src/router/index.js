@@ -31,6 +31,11 @@ const router = createRouter({
       name: 'cronologia',
       component: () => import('../views/CronologiaView.vue'),
     },
+    {
+      path: '/comparacao',
+      name: 'comparacao',
+      component: () => import('../views/ComparacaoView.vue'),
+    },
   ],
 })
 

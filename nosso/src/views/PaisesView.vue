@@ -5,6 +5,7 @@ import { usePrrStore } from '../stores/prrStore'
 import { useRouter } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'
 import LoadingSpinner from '../components/LoadingSpinner.vue'
+import ExportButton from '../components/ExportButton.vue'
 
 const store = usePrrStore()
 const { paises, loading } = storeToRefs(store)
@@ -15,11 +16,16 @@ onMounted(() => store.carregarTudo())
 
 <template>
   <div>
-    <PageHeader
-      icone="🗺️"
-      titulo="Países"
-      descricao="Selecione um país para ver o seu dashboard detalhado de execução do PRR."
-    />
+    <div class="flex items-start justify-between mb-8 gap-4">
+      <PageHeader
+        icone="🗺️"
+        titulo="Países"
+        descricao="Selecione um país para ver o seu dashboard detalhado de execução do PRR."
+      />
+      <div class="pt-1 flex-shrink-0">
+        <ExportButton :data="paises" filename="paises" />
+      </div>
+    </div>
 
     <LoadingSpinner v-if="loading" />
 

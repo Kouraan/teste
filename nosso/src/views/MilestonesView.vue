@@ -8,6 +8,7 @@ import PageHeader from '../components/PageHeader.vue'
 import LoadingSpinner from '../components/LoadingSpinner.vue'
 import EstadoBadge from '../components/EstadoBadge.vue'
 import PilarBadge from '../components/PilarBadge.vue'
+import ExportButton from '../components/ExportButton.vue'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend)
 
@@ -67,11 +68,16 @@ const filtrados = computed(() =>
 
 <template>
   <div>
-    <PageHeader
-      icone="🎯"
-      titulo="Milestones & Targets"
-      descricao="Os Estados-Membros devem cumprir os milestones e targets acordados antes de cada desembolso."
-    />
+    <div class="flex items-start justify-between mb-8 gap-4">
+      <PageHeader
+        icone="🎯"
+        titulo="Milestones & Targets"
+        descricao="Os Estados-Membros devem cumprir os milestones e targets acordados antes de cada desembolso."
+      />
+      <div class="pt-1 flex-shrink-0">
+        <ExportButton :data="filtrados" filename="milestones" />
+      </div>
+    </div>
 
     <LoadingSpinner v-if="loading" />
 

@@ -15,12 +15,35 @@ const props = defineProps({
 })
 const emit = defineEmits(['selecionar-pais'])
 
-// Países da UE com RRF no nosso projeto
+// Países da UE com RRF — 27 países
 const paisesPRR = {
-  Portugal: { id: 'portugal', desembolsado: 6.46, alocacao: 19.3 },
-  Spain: { id: 'espanha', desembolsado: 29.74, alocacao: 163 },
-  France: { id: 'franca', desembolsado: 14.6, alocacao: 40.9 },
-  Germany: { id: 'alemanha', desembolsado: 2.25, alocacao: 28.0 },
+  Austria: { id: 'austria', desembolsado: 1.85, alocacao: 3.5 },
+  Belgium: { id: 'belgium', desembolsado: 3.25, alocacao: 5.9 },
+  Bulgaria: { id: 'bulgaria', desembolsado: 2.89, alocacao: 6.3 },
+  Croatia: { id: 'croatia', desembolsado: 5.21, alocacao: 10.0 },
+  Cyprus: { id: 'cyprus', desembolsado: 0.62, alocacao: 1.2 },
+  Czechia: { id: 'czechia', desembolsado: 3.64, alocacao: 7.0 },
+  Denmark: { id: 'denmark', desembolsado: 0.68, alocacao: 1.3 },
+  Estonia: { id: 'estonia', desembolsado: 0.51, alocacao: 0.977 },
+  Finland: { id: 'finland', desembolsado: 1.09, alocacao: 2.1 },
+  France: { id: 'france', desembolsado: 21.68, alocacao: 40.9 },
+  Germany: { id: 'germany', desembolsado: 14.84, alocacao: 28.0 },
+  Greece: { id: 'greece', desembolsado: 15.87, alocacao: 30.5 },
+  Hungary: { id: 'hungary', desembolsado: 3.38, alocacao: 7.2 },
+  Ireland: { id: 'ireland', desembolsado: 0.48, alocacao: 0.92 },
+  Italy: { id: 'italy', desembolsado: 101.92, alocacao: 191.5 },
+  Latvia: { id: 'latvia', desembolsado: 0.95, alocacao: 1.83 },
+  Lithuania: { id: 'lithuania', desembolsado: 1.16, alocacao: 2.24 },
+  Luxembourg: { id: 'luxembourg', desembolsado: 0.05, alocacao: 0.1 },
+  Malta: { id: 'malta', desembolsado: 0.29, alocacao: 0.56 },
+  Netherlands: { id: 'netherlands', desembolsado: 3.18, alocacao: 6.0 },
+  Poland: { id: 'poland', desembolsado: 30.88, alocacao: 58.1 },
+  Portugal: { id: 'portugal', desembolsado: 10.36, alocacao: 19.3 },
+  Romania: { id: 'romania', desembolsado: 7.34, alocacao: 14.2 },
+  Slovakia: { id: 'slovakia', desembolsado: 3.27, alocacao: 6.3 },
+  Slovenia: { id: 'slovenia', desembolsado: 1.46, alocacao: 2.8 },
+  Spain: { id: 'spain', desembolsado: 86.79, alocacao: 163.0 },
+  Sweden: { id: 'sweden', desembolsado: 1.76, alocacao: 3.3 },
 }
 
 // Todos os países EU (sem PRR no nosso dataset — mostrados em azul mais claro)

@@ -8,6 +8,7 @@ const sidebarOpen = ref(true)
 const navItems = [
   { to: '/', icon: '🏠', label: 'Visão Geral', name: 'overview' },
   { to: '/paises', icon: '🗺️', label: 'Países', name: 'paises' },
+  { to: '/comparacao', icon: '⚖️', label: 'Comparação', name: 'comparacao' },
   { to: '/milestones', icon: '🎯', label: 'Milestones & Targets', name: 'milestones' },
   { to: '/desembolsos', icon: '💶', label: 'Desembolsos', name: 'desembolsos' },
   { to: '/indicadores', icon: '📊', label: 'Indicadores Comuns', name: 'indicadores' },
@@ -52,7 +53,7 @@ const navItems = [
           :to="item.to"
           class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 group"
           :class="[
-            route.name === item.name || (route.name === 'pais-detalhe' && item.name === 'paises')
+            route.name === item.name || (route.name === 'pais-detalhe' && (item.name === 'paises' || item.name === 'comparacao'))
               ? 'bg-white/20 text-white'
               : 'text-white/70 hover:bg-white/10 hover:text-white',
           ]"

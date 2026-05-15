@@ -9,6 +9,7 @@ import PageHeader from '../components/PageHeader.vue'
 import KpiCard from '../components/KpiCard.vue'
 import LoadingSpinner from '../components/LoadingSpinner.vue'
 import MapaEuropa from '../components/MapaEuropa.vue'
+import ExportButton from '../components/ExportButton.vue'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend)
 
@@ -66,11 +67,16 @@ const chartOpts = {
 
 <template>
   <div>
-    <PageHeader
-      icone="🏠"
-      titulo="Visão Geral"
-      descricao="Panorama global do Mecanismo de Recuperação e Resiliência (RRF) — NextGenerationEU."
-    />
+    <div class="flex items-start justify-between mb-8 gap-4">
+      <PageHeader
+        icone="🏠"
+        titulo="Visão Geral"
+        descricao="Panorama global do Mecanismo de Recuperação e Resiliência (RRF) — NextGenerationEU."
+      />
+      <div class="pt-1 flex-shrink-0">
+        <ExportButton :data="paises" filename="paises-resumo" />
+      </div>
+    </div>
 
     <LoadingSpinner v-if="loading" />
 

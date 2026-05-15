@@ -134,13 +134,24 @@ const pilaresAlocacao = computed(() => {
 
 <template>
   <div>
-    <!-- Breadcrumb -->
-    <div class="flex items-center gap-2 text-sm text-slate-400 mb-5">
-      <button @click="router.push('/paises')" class="hover:text-prr-blue transition-colors">
-        🗺️ Países
+    <!-- Breadcrumb + Botão comparação -->
+    <div class="flex items-center justify-between mb-5 gap-4">
+      <div class="flex items-center gap-2 text-sm text-slate-400">
+        <button @click="router.push('/paises')" class="hover:text-prr-blue transition-colors">
+          🗺️ Países
+        </button>
+        <span>/</span>
+        <span class="text-prr-blue font-medium">{{ pais?.nome ?? route.params.id }}</span>
+      </div>
+      <button
+        v-if="pais"
+        @click="router.push({ name: 'comparacao', query: { pais: pais.id } })"
+        class="flex items-center gap-2 px-3 py-1.5 bg-prr-blue text-white rounded-lg hover:bg-blue-800 transition-colors text-sm font-medium flex-shrink-0"
+        title="Comparar este país com outros"
+      >
+        <span>⚖️</span>
+        <span>Comparar</span>
       </button>
-      <span>/</span>
-      <span class="text-prr-blue font-medium">{{ pais?.nome ?? route.params.id }}</span>
     </div>
 
     <LoadingSpinner v-if="loading" />

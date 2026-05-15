@@ -6,6 +6,7 @@ import { Doughnut } from 'vue-chartjs'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import PageHeader from '../components/PageHeader.vue'
 import LoadingSpinner from '../components/LoadingSpinner.vue'
+import ExportButton from '../components/ExportButton.vue'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
@@ -38,11 +39,16 @@ const doughnutOpts = {
 
 <template>
   <div>
-    <PageHeader
-      icone="💶"
-      titulo="Desembolsos"
-      descricao="Acompanhe os desembolsos realizados aos Estados-Membros no âmbito do RRF."
-    />
+    <div class="flex items-start justify-between mb-8 gap-4">
+      <PageHeader
+        icone="💶"
+        titulo="Desembolsos"
+        descricao="Acompanhe os desembolsos realizados aos Estados-Membros no âmbito do RRF."
+      />
+      <div class="pt-1 flex-shrink-0">
+        <ExportButton :data="resumo.porPais" filename="desembolsos-por-pais" />
+      </div>
+    </div>
 
     <LoadingSpinner v-if="loading" />
 
