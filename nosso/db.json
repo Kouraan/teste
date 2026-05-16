@@ -16,21 +16,14 @@
       "planNome": "Plano de Recuperação e Resiliência (PRR)",
       "planAprovado": "Jun 2021",
       "ultimaAtualizacao": "Jan 2026",
-      "sobre": "O PRR de Portugal foca-se em três pilares: Resiliência, Transição Verde e Transformação Digital, com um envelope financeiro de €16,6B em subvenções e €2,7B em empréstimos.",
+      "sobre": "O PRR de Portugal foca-se em três dimensões: Resiliência, Transição Verde e Transformação Digital, com um envelope financeiro de €16,6B em subvenções e €2,7B em empréstimos.",
       "repowereu": "Capítulo REPowerEU adicional de €0,9B para independência energética.",
       "alocacao": 19.3,
       "subvencoes": 16.6,
       "emprestimos": 2.7,
       "pibShare": "7%",
       "desembolsado": 6.46,
-      "pilaresAlocacao": {
-        "verde": 38,
-        "digital": 22,
-        "social": 27,
-        "crescimento": 32,
-        "saude": 18,
-        "geracao": 22
-      },
+      "pilaresAlocacao": { "verde": 38, "digital": 22, "social": 27, "crescimento": 32, "saude": 18, "geracao": 22 },
       "reformasChave": [
         "Reforma do mercado de trabalho e apoio ao desemprego",
         "Sustentabilidade do sistema de pensões",
@@ -58,21 +51,14 @@
       "planNome": "Plan de Recuperación, Transformación y Resiliencia (PRTR)",
       "planAprovado": "Jun 2021",
       "ultimaAtualizacao": "Jan 2026",
-      "sobre": "O PRTR de Espanha é o maior da UE, com €163B totais, focado na transição ecológica e digital.",
+      "sobre": "O PRTR de Espanha é o maior da UE, com €163B totais, focado na transição ecológica e digital com forte ênfase em veículos elétricos e energias renováveis.",
       "repowereu": "Capítulo adicional de €2,6B para segurança energética.",
-      "alocacao": 163,
+      "alocacao": 163.0,
       "subvencoes": 77.2,
       "emprestimos": 85.8,
       "pibShare": "12%",
       "desembolsado": 29.74,
-      "pilaresAlocacao": {
-        "verde": 40,
-        "digital": 28,
-        "social": 25,
-        "crescimento": 33,
-        "saude": 18,
-        "geracao": 22
-      },
+      "pilaresAlocacao": { "verde": 40, "digital": 28, "social": 25, "crescimento": 33, "saude": 18, "geracao": 22 },
       "reformasChave": [
         "Reforma do mercado de trabalho (Ley del trabajo)",
         "Regulação e sustentabilidade das pensões",
@@ -100,21 +86,14 @@
       "planNome": "Plan national de relance et de résilience (PNRR)",
       "planAprovado": "Jul 2021",
       "ultimaAtualizacao": "Jan 2026",
-      "sobre": "A França foca-se na competitividade industrial e na transição ecológica com €40,9B em subvenções.",
+      "sobre": "A França foca-se na competitividade industrial e na transição ecológica com €40,9B em subvenções, sem recurso a empréstimos.",
       "repowereu": "€2,1B adicionais para bombas de calor e nuclear.",
       "alocacao": 40.9,
       "subvencoes": 40.9,
       "emprestimos": 0,
       "pibShare": "1.6%",
       "desembolsado": 14.6,
-      "pilaresAlocacao": {
-        "verde": 46,
-        "digital": 21,
-        "social": 33,
-        "crescimento": 33,
-        "saude": 20,
-        "geracao": 24
-      },
+      "pilaresAlocacao": { "verde": 46, "digital": 21, "social": 33, "crescimento": 33, "saude": 20, "geracao": 24 },
       "reformasChave": [
         "Reforma das finanças públicas e pensões",
         "Reorganização do sistema de saúde",
@@ -142,21 +121,14 @@
       "planNome": "Deutscher Aufbau- und Resilienzplan (DARP)",
       "planAprovado": "Jul 2021",
       "ultimaAtualizacao": "Jan 2026",
-      "sobre": "A Alemanha foca-se na transição climática e digital com €28B em subvenções.",
+      "sobre": "A Alemanha foca-se na transição climática e digital com €28B em subvenções, com especial ênfase em hidrogénio e digitalização escolar.",
       "repowereu": "Capítulo de hidrogénio e redes de €1,5B.",
       "alocacao": 28.0,
       "subvencoes": 28.0,
       "emprestimos": 0,
       "pibShare": "0.7%",
       "desembolsado": 2.25,
-      "pilaresAlocacao": {
-        "verde": 42,
-        "digital": 52,
-        "social": 15,
-        "crescimento": 25,
-        "saude": 10,
-        "geracao": 20
-      },
+      "pilaresAlocacao": { "verde": 42, "digital": 52, "social": 15, "crescimento": 25, "saude": 10, "geracao": 20 },
       "reformasChave": [
         "Modernização do quadro de investimento e inovação",
         "Reforma da regulação do sistema energético",
@@ -174,6 +146,811 @@
         { "icone": "🖥️", "valor": "40.000", "unidade": "escolas", "label": "Escolas digitalizadas" },
         { "icone": "🚆", "valor": "1.300", "unidade": "km", "label": "Rede ferroviária modernizada" },
         { "icone": "♻️", "valor": "850", "unidade": "projetos", "label": "Projetos economia circular" }
+      ]
+    },
+    {
+      "id": "italia",
+      "nome": "Itália",
+      "sigla": "IT",
+      "bandeira": "🇮🇹",
+      "planNome": "Piano Nazionale di Ripresa e Resilienza (PNRR)",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O PNRR italiano é o maior plano nacional, com €191,5B totais. Foca-se em digitalização, transição verde, infraestruturas e coesão social.",
+      "repowereu": "€11,2B adicionais para eficiência energética e renováveis.",
+      "alocacao": 191.5,
+      "subvencoes": 68.9,
+      "emprestimos": 122.6,
+      "pibShare": "11%",
+      "desembolsado": 46.3,
+      "pilaresAlocacao": { "verde": 37, "digital": 27, "social": 30, "crescimento": 40, "saude": 22, "geracao": 25 },
+      "reformasChave": [
+        "Reforma da justiça e redução dos tempos processuais",
+        "Reforma da administração pública",
+        "Simplificação burocrática para investimento",
+        "Reforma da concorrência e mercado de trabalho"
+      ],
+      "investimentosChave": [
+        { "valor": "€19,7B", "descricao": "Transição verde e eficiência energética" },
+        { "valor": "€13,4B", "descricao": "Digitalização PA e imprese" },
+        { "valor": "€15,6B", "descricao": "Infraestruturas para mobilidade sustentável" },
+        { "valor": "€11,5B", "descricao": "Educação e pesquisa" }
+      ],
+      "indicadores": [
+        { "icone": "🏠", "valor": "50.000", "unidade": "edifícios", "label": "Edifícios públicos renovados" },
+        { "icone": "🚆", "valor": "3.000", "unidade": "km", "label": "Rede ferroviária AV/AC" },
+        { "icone": "📡", "valor": "1.300", "unidade": "comuni", "label": "Municípios com fibra ótica" },
+        { "icone": "🎓", "valor": "264.000", "unidade": "lugares", "label": "Novos lugares em creches" }
+      ]
+    },
+    {
+      "id": "polonia",
+      "nome": "Polónia",
+      "sigla": "PL",
+      "bandeira": "🇵🇱",
+      "planNome": "Krajowy Plan Odbudowy (KPO)",
+      "planAprovado": "Jun 2022",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O KPO polaco está focado na resiliência e competitividade, com €58,1B. Enfrentou atrasos por questões de Estado de direito, mas o desembolso foi desbloqueado em 2023.",
+      "repowereu": "€5,1B para energias renováveis e independência energética.",
+      "alocacao": 58.1,
+      "subvencoes": 23.9,
+      "emprestimos": 34.2,
+      "pibShare": "10%",
+      "desembolsado": 5.2,
+      "pilaresAlocacao": { "verde": 42, "digital": 21, "social": 28, "crescimento": 35, "saude": 20, "geracao": 22 },
+      "reformasChave": [
+        "Reforma do sistema judicial (independência)",
+        "Transparência e combate à corrupção",
+        "Reforma do setor energético (carvão para renováveis)",
+        "Modernização da administração pública"
+      ],
+      "investimentosChave": [
+        { "valor": "€8,0B", "descricao": "Energias renováveis e eficiência energética" },
+        { "valor": "€5,5B", "descricao": "Transformação digital de empresas e AP" },
+        { "valor": "€4,2B", "descricao": "Infraestruturas de saúde" },
+        { "valor": "€3,8B", "descricao": "Transporte sustentável e ferroviário" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "5.000", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "🏥", "valor": "200", "unidade": "hospitais", "label": "Hospitais modernizados" },
+        { "icone": "🚆", "valor": "2.100", "unidade": "km", "label": "Ferroviário modernizado" },
+        { "icone": "💻", "valor": "80.000", "unidade": "PME", "label": "PME digitalizadas" }
+      ]
+    },
+    {
+      "id": "grecia",
+      "nome": "Grécia",
+      "sigla": "GR",
+      "bandeira": "🇬🇷",
+      "planNome": "Ellinikó Schédio Anáptixis kai Anthekatástasis (Greece 2.0)",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O Greece 2.0 tem €30,5B e é o maior plano em % do PIB de um estado membro, alavancando uma transformação profunda da economia grega após a crise financeira.",
+      "repowereu": "€1,7B para descarbonização energética.",
+      "alocacao": 30.5,
+      "subvencoes": 17.8,
+      "emprestimos": 12.7,
+      "pibShare": "16%",
+      "desembolsado": 12.3,
+      "pilaresAlocacao": { "verde": 37, "digital": 23, "social": 31, "crescimento": 40, "saude": 19, "geracao": 21 },
+      "reformasChave": [
+        "Reforma fiscal e da administração tributária",
+        "Modernização da justiça e registos",
+        "Liberalização do mercado de energia",
+        "Simplificação do investimento e licenciamento"
+      ],
+      "investimentosChave": [
+        { "valor": "€5,0B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€3,3B", "descricao": "Transformação digital" },
+        { "valor": "€2,9B", "descricao": "Infraestruturas e transportes" },
+        { "valor": "€2,5B", "descricao": "Emprego e coesão social" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "4.700", "unidade": "MW", "label": "Energia solar instalada" },
+        { "icone": "🏗️", "valor": "35.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "💻", "valor": "30.000", "unidade": "empresas", "label": "Empresas digitalizadas" },
+        { "icone": "🎓", "valor": "200.000", "unidade": "pessoas", "label": "Pessoas em formação" }
+      ]
+    },
+    {
+      "id": "romenia",
+      "nome": "Roménia",
+      "sigla": "RO",
+      "bandeira": "🇷🇴",
+      "planNome": "Planul Național de Redresare și Reziliență (PNRR)",
+      "planAprovado": "Set 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O PNRR romeno de €14,2B foca-se em saúde, educação, transição verde e reforma da administração pública, com um forte componente anti-corrupção.",
+      "repowereu": "€1,4B para energia renovável.",
+      "alocacao": 14.2,
+      "subvencoes": 14.2,
+      "emprestimos": 0,
+      "pibShare": "6%",
+      "desembolsado": 3.4,
+      "pilaresAlocacao": { "verde": 31, "digital": 20, "social": 35, "crescimento": 28, "saude": 25, "geracao": 22 },
+      "reformasChave": [
+        "Reforma anticorrupção e sistema judicial",
+        "Modernização da administração pública",
+        "Reforma do sistema de saúde",
+        "Reforma do sistema de pensões"
+      ],
+      "investimentosChave": [
+        { "valor": "€2,5B", "descricao": "Infraestruturas de saúde" },
+        { "valor": "€2,2B", "descricao": "Educação e competências" },
+        { "valor": "€1,8B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€1,5B", "descricao": "Digitalização e conectividade" }
+      ],
+      "indicadores": [
+        { "icone": "🏥", "valor": "25", "unidade": "hospitais", "label": "Hospitais construídos/renovados" },
+        { "icone": "🏫", "valor": "500", "unidade": "escolas", "label": "Escolas modernizadas" },
+        { "icone": "☀️", "valor": "2.600", "unidade": "MW", "label": "Renováveis instaladas" },
+        { "icone": "📡", "valor": "700", "unidade": "localidades", "label": "Conectividade rural" }
+      ]
+    },
+    {
+      "id": "croacia",
+      "nome": "Croácia",
+      "sigla": "HR",
+      "bandeira": "🇭🇷",
+      "planNome": "Nacionalni plan oporavka i otpornosti (NPOO)",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "Com €10B, o NPOO croata é um dos mais elevados em % do PIB e foca-se em recuperação pós-COVID, digitalização e transição verde.",
+      "repowereu": "€0,6B para energias renováveis.",
+      "alocacao": 10.0,
+      "subvencoes": 6.3,
+      "emprestimos": 3.7,
+      "pibShare": "17%",
+      "desembolsado": 4.8,
+      "pilaresAlocacao": { "verde": 40, "digital": 20, "social": 26, "crescimento": 32, "saude": 20, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do sistema judicial",
+        "Combate à corrupção e transparência",
+        "Reforma do mercado de trabalho",
+        "Modernização da administração pública"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,9B", "descricao": "Transição verde e resiliência climática" },
+        { "valor": "€1,5B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€1,2B", "descricao": "Educação e ciência" },
+        { "valor": "€1,0B", "descricao": "Saúde e resiliência social" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "1.200", "unidade": "MW", "label": "Renováveis instaladas" },
+        { "icone": "🏫", "valor": "300", "unidade": "escolas", "label": "Escolas digitalizadas" },
+        { "icone": "🏥", "valor": "15", "unidade": "hospitais", "label": "Hospitais renovados" },
+        { "icone": "💻", "valor": "10.000", "unidade": "PME", "label": "PME digitalizadas" }
+      ]
+    },
+    {
+      "id": "republica-checa",
+      "nome": "Rep. Checa",
+      "sigla": "CZ",
+      "bandeira": "🇨🇿",
+      "planNome": "Národní plán obnovy (NPO)",
+      "planAprovado": "Set 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O NPO checo de €7B foca-se na digitalização, transição energética do carvão para renováveis e modernização da saúde e educação.",
+      "repowereu": "€1,6B para transição energética acelerada.",
+      "alocacao": 7.0,
+      "subvencoes": 7.0,
+      "emprestimos": 0,
+      "pibShare": "3%",
+      "desembolsado": 1.2,
+      "pilaresAlocacao": { "verde": 42, "digital": 22, "social": 22, "crescimento": 30, "saude": 18, "geracao": 20 },
+      "reformasChave": [
+        "Reforma da saúde e digitalização hospitalar",
+        "Reforma do sistema de pensões",
+        "Transição energética do carvão",
+        "Simplificação administrativa"
+      ],
+      "investimentosChave": [
+        { "valor": "€2,1B", "descricao": "Transição energética e renováveis" },
+        { "valor": "€1,5B", "descricao": "Digitalização saúde e educação" },
+        { "valor": "€1,2B", "descricao": "Eficiência energética edifícios" },
+        { "valor": "€0,8B", "descricao": "Transporte sustentável" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "1.800", "unidade": "MW", "label": "Renováveis instaladas" },
+        { "icone": "🏥", "valor": "40", "unidade": "hospitais", "label": "Hospitais digitalizados" },
+        { "icone": "🏠", "valor": "20.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "🎓", "valor": "50.000", "unidade": "pessoas", "label": "Requalificação profissional" }
+      ]
+    },
+    {
+      "id": "hungria",
+      "nome": "Hungria",
+      "sigla": "HU",
+      "bandeira": "🇭🇺",
+      "planNome": "Magyarország helyreállítási és rezilienciaerősítési terve",
+      "planAprovado": "Dez 2022",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano húngaro de €7,2B foi aprovado tardiamente devido a preocupações com Estado de direito. Foca-se em transição verde, digitalização e coesão social.",
+      "repowereu": "€0,9B para energias renováveis.",
+      "alocacao": 7.2,
+      "subvencoes": 5.8,
+      "emprestimos": 1.4,
+      "pibShare": "5%",
+      "desembolsado": 0.9,
+      "pilaresAlocacao": { "verde": 40, "digital": 30, "social": 20, "crescimento": 28, "saude": 18, "geracao": 18 },
+      "reformasChave": [
+        "Reforma do sistema judicial e independência",
+        "Transparência e anti-corrupção",
+        "Reforma do ambiente de negócios",
+        "Modernização do sistema de saúde"
+      ],
+      "investimentosChave": [
+        { "valor": "€2,0B", "descricao": "Transição energética renovável" },
+        { "valor": "€1,5B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€1,2B", "descricao": "Transporte sustentável" },
+        { "valor": "€0,9B", "descricao": "Saúde e resiliência" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "1.500", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "🚆", "valor": "400", "unidade": "km", "label": "Ferroviário modernizado" },
+        { "icone": "🏥", "valor": "30", "unidade": "hospitais", "label": "Hospitais modernizados" },
+        { "icone": "💻", "valor": "15.000", "unidade": "empresas", "label": "Empresas digitalizadas" }
+      ]
+    },
+    {
+      "id": "eslovaquia",
+      "nome": "Eslováquia",
+      "sigla": "SK",
+      "bandeira": "🇸🇰",
+      "planNome": "Plán obnovy a odolnosti SR",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano eslovaco de €6,3B foca-se em transição verde, digitalização e resiliência, com reformas importantes no sistema judicial e saúde.",
+      "repowereu": "€0,6B para eficiência energética.",
+      "alocacao": 6.3,
+      "subvencoes": 6.3,
+      "emprestimos": 0,
+      "pibShare": "6%",
+      "desembolsado": 0.8,
+      "pilaresAlocacao": { "verde": 38, "digital": 22, "social": 25, "crescimento": 30, "saude": 22, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do sistema judicial",
+        "Reforma da saúde",
+        "Simplificação burocrática",
+        "Reforma da educação"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,5B", "descricao": "Transição verde e eficiência" },
+        { "valor": "€1,1B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€1,0B", "descricao": "Infraestruturas de saúde" },
+        { "valor": "€0,8B", "descricao": "Educação e I&D" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "800", "unidade": "MW", "label": "Renováveis instaladas" },
+        { "icone": "🏥", "valor": "20", "unidade": "hospitais", "label": "Hospitais renovados" },
+        { "icone": "🏫", "valor": "200", "unidade": "escolas", "label": "Escolas modernizadas" },
+        { "icone": "📡", "valor": "500", "unidade": "localidades", "label": "Conectividade de banda larga" }
+      ]
+    },
+    {
+      "id": "bulgaria",
+      "nome": "Bulgária",
+      "sigla": "BG",
+      "bandeira": "🇧🇬",
+      "planNome": "Национален план за възстановяване и устойчивост",
+      "planAprovado": "Out 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano búlgaro de €6,3B enfrenta desafios de Estado de direito mas foca-se em modernização, digitalização e transição energética.",
+      "repowereu": "€0,7B para renováveis.",
+      "alocacao": 6.3,
+      "subvencoes": 6.3,
+      "emprestimos": 0,
+      "pibShare": "10%",
+      "desembolsado": 1.8,
+      "pilaresAlocacao": { "verde": 36, "digital": 24, "social": 28, "crescimento": 30, "saude": 20, "geracao": 22 },
+      "reformasChave": [
+        "Reforma judicial e anti-corrupção",
+        "Reforma da administração pública",
+        "Transição energética do carvão",
+        "Modernização do sistema de saúde"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,6B", "descricao": "Transição energética renovável" },
+        { "valor": "€1,2B", "descricao": "Digitalização e e-governo" },
+        { "valor": "€1,0B", "descricao": "Infraestruturas de saúde" },
+        { "valor": "€0,8B", "descricao": "Transporte e mobilidade" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "1.600", "unidade": "MW", "label": "Renováveis instaladas" },
+        { "icone": "🏥", "valor": "18", "unidade": "hospitais", "label": "Hospitais renovados" },
+        { "icone": "💻", "valor": "5.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🏠", "valor": "15.000", "unidade": "edifícios", "label": "Edifícios renovados" }
+      ]
+    },
+    {
+      "id": "austria",
+      "nome": "Áustria",
+      "sigla": "AT",
+      "bandeira": "🇦🇹",
+      "planNome": "Österreichischer Aufbau- und Resilienzplan (ÖARP)",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano austríaco de €3,5B foca-se em transição ecológica, digitalização e resiliência económica, aproveitando a forte base industrial do país.",
+      "repowereu": "€0,4B para mobilidade sustentável.",
+      "alocacao": 3.5,
+      "subvencoes": 3.5,
+      "emprestimos": 0,
+      "pibShare": "0.8%",
+      "desembolsado": 1.0,
+      "pilaresAlocacao": { "verde": 56, "digital": 22, "social": 18, "crescimento": 28, "saude": 14, "geracao": 20 },
+      "reformasChave": [
+        "Reforma fiscal e ambiental",
+        "Reforma do mercado de trabalho e formação",
+        "Modernização da administração pública",
+        "Reforma do sistema de saúde"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,2B", "descricao": "Mobilidade sustentável e transporte verde" },
+        { "valor": "€0,7B", "descricao": "Digitalização e I&D" },
+        { "valor": "€0,5B", "descricao": "Eficiência energética edifícios" },
+        { "valor": "€0,4B", "descricao": "Coesão social e emprego" }
+      ],
+      "indicadores": [
+        { "icone": "🚲", "valor": "1.500", "unidade": "km", "label": "Ciclovias novas" },
+        { "icone": "🏠", "valor": "12.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "💻", "valor": "8.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "☀️", "valor": "500", "unidade": "MW", "label": "Solar instalado" }
+      ]
+    },
+    {
+      "id": "belgica",
+      "nome": "Bélgica",
+      "sigla": "BE",
+      "bandeira": "🇧🇪",
+      "planNome": "Plan national de relance et de résilience (PNRR-BE)",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano belga de €5,9B tem uma estrutura federal complexa e foca-se em transição climática, digitalização, mobilidade e mercado de trabalho.",
+      "repowereu": "€0,5B para eficiência energética.",
+      "alocacao": 5.9,
+      "subvencoes": 5.9,
+      "emprestimos": 0,
+      "pibShare": "1.2%",
+      "desembolsado": 2.1,
+      "pilaresAlocacao": { "verde": 49, "digital": 25, "social": 22, "crescimento": 30, "saude": 16, "geracao": 22 },
+      "reformasChave": [
+        "Reforma do mercado de trabalho",
+        "Reforma das pensões",
+        "Descarbonização do setor energético",
+        "Digitalização da administração"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,5B", "descricao": "Transição climática e mobilidade" },
+        { "valor": "€1,1B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€0,9B", "descricao": "Investigação e inovação" },
+        { "valor": "€0,7B", "descricao": "Habitação social e renovação" }
+      ],
+      "indicadores": [
+        { "icone": "🚆", "valor": "600", "unidade": "km", "label": "Ferroviário modernizado" },
+        { "icone": "☀️", "valor": "800", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "💻", "valor": "12.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🎓", "valor": "90.000", "unidade": "pessoas", "label": "Formação profissional" }
+      ]
+    },
+    {
+      "id": "paises-baixos",
+      "nome": "Países Baixos",
+      "sigla": "NL",
+      "bandeira": "🇳🇱",
+      "planNome": "Nationaal Herstelplan (NHP)",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano neerlandês de €6B foca-se em transição climática, habitação, digitalização e um mercado de trabalho mais resiliente.",
+      "repowereu": "€0,6B para hidrogénio verde.",
+      "alocacao": 6.0,
+      "subvencoes": 6.0,
+      "emprestimos": 0,
+      "pibShare": "0.7%",
+      "desembolsado": 1.8,
+      "pilaresAlocacao": { "verde": 48, "digital": 25, "social": 20, "crescimento": 28, "saude": 15, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do mercado de habitação",
+        "Reforma do mercado de trabalho (flexibilização)",
+        "Descarbonização industrial",
+        "Reforma do sistema de saúde"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,8B", "descricao": "Transição climática e renováveis" },
+        { "valor": "€1,2B", "descricao": "Digitalização e inovação" },
+        { "valor": "€0,9B", "descricao": "Habitação e renovação urbana" },
+        { "valor": "€0,7B", "descricao": "Mercado de trabalho e formação" }
+      ],
+      "indicadores": [
+        { "icone": "💨", "valor": "1.500", "unidade": "MW", "label": "Eólico offshore adicionado" },
+        { "icone": "🏠", "valor": "60.000", "unidade": "habitações", "label": "Habitações renovadas" },
+        { "icone": "💻", "valor": "20.000", "unidade": "empresas", "label": "Empresas digitalizadas" },
+        { "icone": "🎓", "valor": "100.000", "unidade": "pessoas", "label": "Requalificação profissional" }
+      ]
+    },
+    {
+      "id": "suecia",
+      "nome": "Suécia",
+      "sigla": "SE",
+      "bandeira": "🇸🇪",
+      "planNome": "Sveriges återhämtnings- och resiliensplan",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano sueco de €3,3B é modesto em relação ao PIB e foca-se em transição verde, digitalização e mercado de trabalho inclusivo.",
+      "repowereu": "€0,3B para eficiência energética industrial.",
+      "alocacao": 3.3,
+      "subvencoes": 3.3,
+      "emprestimos": 0,
+      "pibShare": "0.6%",
+      "desembolsado": 0.8,
+      "pilaresAlocacao": { "verde": 53, "digital": 22, "social": 18, "crescimento": 25, "saude": 15, "geracao": 18 },
+      "reformasChave": [
+        "Reforma do mercado de trabalho para grupos vulneráveis",
+        "Descarbonização industrial",
+        "Reforma do sistema de saúde",
+        "Digitalização da administração"
+      ],
+      "investimentosChave": [
+        { "valor": "€1,0B", "descricao": "Transição verde e eficiência energética" },
+        { "valor": "€0,7B", "descricao": "Digitalização e inovação" },
+        { "valor": "€0,5B", "descricao": "Emprego e mercado de trabalho" },
+        { "valor": "€0,4B", "descricao": "Saúde e resiliência social" }
+      ],
+      "indicadores": [
+        { "icone": "🌲", "valor": "500", "unidade": "projetos", "label": "Projetos bioeconomia" },
+        { "icone": "💻", "valor": "5.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🎓", "valor": "40.000", "unidade": "pessoas", "label": "Requalificação profissional" },
+        { "icone": "☀️", "valor": "600", "unidade": "MW", "label": "Solar instalado" }
+      ]
+    },
+    {
+      "id": "dinamarca",
+      "nome": "Dinamarca",
+      "sigla": "DK",
+      "bandeira": "🇩🇰",
+      "planNome": "Danmarks genopretnings- og resiliensplan",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano dinamarquês de €1,3B é dos mais pequenos da UE em valor absoluto, mas foca-se em transição verde e competitividade digital.",
+      "repowereu": "€0,15B para eólico offshore.",
+      "alocacao": 1.3,
+      "subvencoes": 1.3,
+      "emprestimos": 0,
+      "pibShare": "0.4%",
+      "desembolsado": 0.4,
+      "pilaresAlocacao": { "verde": 59, "digital": 20, "social": 15, "crescimento": 22, "saude": 14, "geracao": 18 },
+      "reformasChave": [
+        "Reforma do clima e energia",
+        "Reforma digital da administração",
+        "Flexibilidade do mercado de trabalho",
+        "Reforma do sistema educativo"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,5B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€0,3B", "descricao": "Digitalização e I&D" },
+        { "valor": "€0,2B", "descricao": "Mercado de trabalho" },
+        { "valor": "€0,15B", "descricao": "Saúde e resiliência" }
+      ],
+      "indicadores": [
+        { "icone": "💨", "valor": "1.200", "unidade": "MW", "label": "Eólico offshore" },
+        { "icone": "💻", "valor": "3.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🌡️", "valor": "30", "unidade": "%", "label": "Redução emissões" },
+        { "icone": "🎓", "valor": "20.000", "unidade": "pessoas", "label": "Requalificação" }
+      ]
+    },
+    {
+      "id": "finlandia",
+      "nome": "Finlândia",
+      "sigla": "FI",
+      "bandeira": "🇫🇮",
+      "planNome": "Suomen kestävän kasvun ohjelma",
+      "planAprovado": "Jun 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano finlandês de €2,1B foca-se em transição verde, digitalização e I&D, aproveitando a forte base tecnológica do país.",
+      "repowereu": "€0,3B para hidrogénio e baterias.",
+      "alocacao": 2.1,
+      "subvencoes": 2.1,
+      "emprestimos": 0,
+      "pibShare": "0.8%",
+      "desembolsado": 0.6,
+      "pilaresAlocacao": { "verde": 50, "digital": 30, "social": 15, "crescimento": 28, "saude": 14, "geracao": 18 },
+      "reformasChave": [
+        "Reforma do sistema de saúde e serviços sociais",
+        "Reforma do mercado de trabalho",
+        "Descarbonização industrial",
+        "Digitalização da administração"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,7B", "descricao": "Transição verde e bioeconomia" },
+        { "valor": "€0,5B", "descricao": "I&D e inovação digital" },
+        { "valor": "€0,4B", "descricao": "Mercado de trabalho e competências" },
+        { "valor": "€0,3B", "descricao": "Saúde e bem-estar" }
+      ],
+      "indicadores": [
+        { "icone": "🌲", "valor": "300", "unidade": "projetos", "label": "Projetos bioeconomia" },
+        { "icone": "💻", "valor": "4.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🔬", "valor": "150", "unidade": "projetos", "label": "Projetos I&D financiados" },
+        { "icone": "🎓", "valor": "30.000", "unidade": "pessoas", "label": "Requalificação profissional" }
+      ]
+    },
+    {
+      "id": "irlanda",
+      "nome": "Irlanda",
+      "sigla": "IE",
+      "bandeira": "🇮🇪",
+      "planNome": "Ireland's National Recovery and Resilience Plan",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano irlandês de €0,92B é o menor da UE em valor absoluto, refletindo a situação macroeconómica favorável do país.",
+      "repowereu": "€0,1B para renováveis offshore.",
+      "alocacao": 0.92,
+      "subvencoes": 0.92,
+      "emprestimos": 0,
+      "pibShare": "0.2%",
+      "desembolsado": 0.3,
+      "pilaresAlocacao": { "verde": 42, "digital": 30, "social": 18, "crescimento": 28, "saude": 18, "geracao": 22 },
+      "reformasChave": [
+        "Reforma do sistema de habitação",
+        "Reforma do mercado de trabalho",
+        "Descarbonização energética",
+        "Digitalização da administração pública"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,25B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€0,2B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€0,15B", "descricao": "Inovação e I&D" },
+        { "valor": "€0,15B", "descricao": "Educação e competências" }
+      ],
+      "indicadores": [
+        { "icone": "💨", "valor": "800", "unidade": "MW", "label": "Eólico offshore" },
+        { "icone": "💻", "valor": "3.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🎓", "valor": "15.000", "unidade": "pessoas", "label": "Requalificação" },
+        { "icone": "🏠", "valor": "5.000", "unidade": "habitações", "label": "Habitações renovadas" }
+      ]
+    },
+    {
+      "id": "estonia",
+      "nome": "Estónia",
+      "sigla": "EE",
+      "bandeira": "🇪🇪",
+      "planNome": "Eesti taaste- ja vastupidavuskava",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano estoniano de €0,98B é um dos mais inovadores da UE em matéria digital, aproveitando o ecossistema e-Estónia já existente.",
+      "repowereu": "€0,2B para transição energética.",
+      "alocacao": 0.977,
+      "subvencoes": 0.977,
+      "emprestimos": 0,
+      "pibShare": "4%",
+      "desembolsado": 0.3,
+      "pilaresAlocacao": { "verde": 45, "digital": 35, "social": 15, "crescimento": 25, "saude": 15, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do sistema de saúde digital",
+        "Expansão da e-Governance",
+        "Transição energética do xisto betuminoso",
+        "Reforma do mercado de trabalho"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,3B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€0,25B", "descricao": "Digitalização e inovação" },
+        { "valor": "€0,2B", "descricao": "Eficiência energética" },
+        { "valor": "€0,1B", "descricao": "Saúde e resiliência" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "400", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "💻", "valor": "2.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🏠", "valor": "5.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "🎓", "valor": "10.000", "unidade": "pessoas", "label": "Requalificação digital" }
+      ]
+    },
+    {
+      "id": "letonia",
+      "nome": "Letónia",
+      "sigla": "LV",
+      "bandeira": "🇱🇻",
+      "planNome": "Latvijas Atveseļošanas un noturības mehānisma plāns",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano letão de €1,83B foca-se em digitalização, saúde, eficiência energética e reformas estruturais para aumentar a competitividade.",
+      "repowereu": "€0,25B para energias renováveis.",
+      "alocacao": 1.83,
+      "subvencoes": 1.83,
+      "emprestimos": 0,
+      "pibShare": "6%",
+      "desembolsado": 0.4,
+      "pilaresAlocacao": { "verde": 38, "digital": 26, "social": 26, "crescimento": 28, "saude": 20, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do sistema de saúde",
+        "Reforma da educação e ensino",
+        "Combate à corrupção",
+        "Modernização da administração pública"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,5B", "descricao": "Saúde e bem-estar" },
+        { "valor": "€0,4B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€0,35B", "descricao": "Transição verde e eficiência" },
+        { "valor": "€0,25B", "descricao": "Educação e I&D" }
+      ],
+      "indicadores": [
+        { "icone": "🏥", "valor": "10", "unidade": "hospitais", "label": "Hospitais modernizados" },
+        { "icone": "💻", "valor": "3.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "☀️", "valor": "300", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "🏠", "valor": "8.000", "unidade": "edifícios", "label": "Edifícios renovados" }
+      ]
+    },
+    {
+      "id": "lituania",
+      "nome": "Lituânia",
+      "sigla": "LT",
+      "bandeira": "🇱🇹",
+      "planNome": "Lietuvos ekonomikos gaivinimo ir atsparumo didinimo planas",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano lituano de €2,24B foca-se em renovação de edifícios, digitalização, eficiência energética e reformas do mercado de trabalho.",
+      "repowereu": "€0,3B para energias renováveis.",
+      "alocacao": 2.24,
+      "subvencoes": 2.24,
+      "emprestimos": 0,
+      "pibShare": "4%",
+      "desembolsado": 0.5,
+      "pilaresAlocacao": { "verde": 40, "digital": 25, "social": 24, "crescimento": 28, "saude": 18, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do mercado de trabalho",
+        "Modernização do sistema de saúde",
+        "Digitalização da administração",
+        "Reforma do sistema de pensões"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,6B", "descricao": "Renovação de edifícios" },
+        { "valor": "€0,5B", "descricao": "Digitalização e inovação" },
+        { "valor": "€0,4B", "descricao": "Transporte sustentável" },
+        { "valor": "€0,35B", "descricao": "Saúde e inclusão social" }
+      ],
+      "indicadores": [
+        { "icone": "🏠", "valor": "12.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "💻", "valor": "4.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "☀️", "valor": "500", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "🎓", "valor": "25.000", "unidade": "pessoas", "label": "Requalificação profissional" }
+      ]
+    },
+    {
+      "id": "eslovenia",
+      "nome": "Eslovénia",
+      "sigla": "SI",
+      "bandeira": "🇸🇮",
+      "planNome": "Načrt za okrevanje in odpornost (NOO)",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano esloveno de €2,8B foca-se em transição verde, digitalização e saúde, com um forte componente de renovação de edifícios.",
+      "repowereu": "€0,35B para energias renováveis.",
+      "alocacao": 2.8,
+      "subvencoes": 2.5,
+      "emprestimos": 0.3,
+      "pibShare": "5%",
+      "desembolsado": 0.7,
+      "pilaresAlocacao": { "verde": 43, "digital": 23, "social": 22, "crescimento": 30, "saude": 18, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do sistema de saúde de longa duração",
+        "Reforma do mercado de trabalho",
+        "Digitalização da administração pública",
+        "Reforma do sistema de pensões"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,8B", "descricao": "Transição verde e eficiência" },
+        { "valor": "€0,5B", "descricao": "Digitalização e conectividade" },
+        { "valor": "€0,45B", "descricao": "Saúde e cuidados de longa duração" },
+        { "valor": "€0,4B", "descricao": "Desenvolvimento rural e urbano" }
+      ],
+      "indicadores": [
+        { "icone": "🏠", "valor": "8.000", "unidade": "edifícios", "label": "Edifícios renovados" },
+        { "icone": "☀️", "valor": "600", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "💻", "valor": "3.500", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🏥", "valor": "8", "unidade": "hospitais", "label": "Hospitais modernizados" }
+      ]
+    },
+    {
+      "id": "luxemburgo",
+      "nome": "Luxemburgo",
+      "sigla": "LU",
+      "bandeira": "🇱🇺",
+      "planNome": "Plan pour la reprise et la résilience du Luxembourg",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano luxemburguês de €0,1B é o mais pequeno da UE, mas foca-se em mobilidade sustentável e digitalização do setor financeiro.",
+      "repowereu": "€0,01B para eficiência energética.",
+      "alocacao": 0.1,
+      "subvencoes": 0.1,
+      "emprestimos": 0,
+      "pibShare": "0.15%",
+      "desembolsado": 0.03,
+      "pilaresAlocacao": { "verde": 55, "digital": 25, "social": 12, "crescimento": 22, "saude": 12, "geracao": 18 },
+      "reformasChave": [
+        "Reforma fiscal de sustentabilidade",
+        "Digitalização do setor financeiro",
+        "Mobilidade sustentável multimodal",
+        "Habitação acessível"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,04B", "descricao": "Mobilidade sustentável" },
+        { "valor": "€0,025B", "descricao": "Digitalização e inovação" },
+        { "valor": "€0,02B", "descricao": "Eficiência energética" },
+        { "valor": "€0,01B", "descricao": "Competências e formação" }
+      ],
+      "indicadores": [
+        { "icone": "🚲", "valor": "200", "unidade": "km", "label": "Ciclovias novas" },
+        { "icone": "🚌", "valor": "50", "unidade": "autocarros", "label": "Autocarros elétricos" },
+        { "icone": "💻", "valor": "500", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🏠", "valor": "1.000", "unidade": "habitações", "label": "Habitações renovadas" }
+      ]
+    },
+    {
+      "id": "malta",
+      "nome": "Malta",
+      "sigla": "MT",
+      "bandeira": "🇲🇹",
+      "planNome": "Malta's Recovery and Resilience Plan",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano de Malta de €0,56B foca-se em digitalização, transição verde e reformas de governança, dada a dependência energética da ilha.",
+      "repowereu": "€0,07B para renováveis.",
+      "alocacao": 0.56,
+      "subvencoes": 0.56,
+      "emprestimos": 0,
+      "pibShare": "4%",
+      "desembolsado": 0.15,
+      "pilaresAlocacao": { "verde": 37, "digital": 30, "social": 20, "crescimento": 28, "saude": 18, "geracao": 20 },
+      "reformasChave": [
+        "Reforma da governança e transparência",
+        "Digitalização e serviços digitais",
+        "Descarbonização e renováveis",
+        "Reforma da saúde pública"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,15B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€0,12B", "descricao": "Digitalização e serviços digitais" },
+        { "valor": "€0,1B", "descricao": "Saúde e bem-estar" },
+        { "valor": "€0,08B", "descricao": "Educação e competências" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "200", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "💻", "valor": "1.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🎓", "valor": "5.000", "unidade": "pessoas", "label": "Requalificação digital" },
+        { "icone": "🏥", "valor": "3", "unidade": "hospitais", "label": "Centros de saúde renovados" }
+      ]
+    },
+    {
+      "id": "chipre",
+      "nome": "Chipre",
+      "sigla": "CY",
+      "bandeira": "🇨🇾",
+      "planNome": "Cyprus Recovery and Resilience Plan",
+      "planAprovado": "Jul 2021",
+      "ultimaAtualizacao": "Jan 2026",
+      "sobre": "O plano cipriota de €1,2B foca-se em digitalização, transição verde, reformas económicas e diversificação da economia além do turismo.",
+      "repowereu": "€0,15B para renováveis.",
+      "alocacao": 1.2,
+      "subvencoes": 1.2,
+      "emprestimos": 0,
+      "pibShare": "5%",
+      "desembolsado": 0.35,
+      "pilaresAlocacao": { "verde": 40, "digital": 27, "social": 20, "crescimento": 30, "saude": 16, "geracao": 20 },
+      "reformasChave": [
+        "Reforma do sistema de saúde",
+        "Modernização da administração pública",
+        "Diversificação económica",
+        "Reforma do sistema judicial"
+      ],
+      "investimentosChave": [
+        { "valor": "€0,3B", "descricao": "Transição verde e renováveis" },
+        { "valor": "€0,25B", "descricao": "Digitalização e inovação" },
+        { "valor": "€0,2B", "descricao": "Saúde e bem-estar" },
+        { "valor": "€0,15B", "descricao": "Educação e competências" }
+      ],
+      "indicadores": [
+        { "icone": "☀️", "valor": "400", "unidade": "MW", "label": "Solar instalado" },
+        { "icone": "💻", "valor": "2.000", "unidade": "empresas", "label": "PME digitalizadas" },
+        { "icone": "🏥", "valor": "5", "unidade": "hospitais", "label": "Hospitais modernizados" },
+        { "icone": "🎓", "valor": "15.000", "unidade": "pessoas", "label": "Requalificação" }
       ]
     }
   ],
@@ -282,17 +1059,26 @@
     }
   ],
   "milestones": [
-    { "id": 1, "pais": "Portugal", "paisId": "portugal", "pilar": "verde", "descricao": "Renovação energética de edifícios", "estado": "concluido", "prazo": "2023-Q2", "csr": "CSR 3 de 2020" },
-    { "id": 2, "pais": "Portugal", "paisId": "portugal", "pilar": "digital", "descricao": "Formação em competências digitais", "estado": "concluido", "prazo": "2023-Q4", "csr": "CSR 2 de 2019" },
+    { "id": 1, "pais": "Portugal", "paisId": "portugal", "pilar": "verde", "descricao": "Renovação energética de edifícios públicos", "estado": "concluido", "prazo": "2023-Q2", "csr": "CSR 3 de 2020" },
+    { "id": 2, "pais": "Portugal", "paisId": "portugal", "pilar": "digital", "descricao": "Formação em competências digitais (120k pessoas)", "estado": "concluido", "prazo": "2023-Q4", "csr": "CSR 2 de 2019" },
     { "id": 3, "pais": "Portugal", "paisId": "portugal", "pilar": "digital", "descricao": "Digitalização da administração pública", "estado": "em-curso", "prazo": "2024-Q2", "csr": "CSR 4 de 2020" },
     { "id": 4, "pais": "Portugal", "paisId": "portugal", "pilar": "crescimento", "descricao": "Fundo de capitalização para PME", "estado": "pendente", "prazo": "2024-Q3", "csr": "CSR 3 de 2020" },
     { "id": 5, "pais": "Espanha", "paisId": "espanha", "pilar": "verde", "descricao": "Reforma regulatória de energias renováveis", "estado": "concluido", "prazo": "2023-Q1", "csr": "CSR 1 de 2020" },
     { "id": 6, "pais": "Espanha", "paisId": "espanha", "pilar": "social", "descricao": "Implementação da reforma do mercado de trabalho", "estado": "concluido", "prazo": "2023-Q2", "csr": "CSR 2 de 2020" },
-    { "id": 7, "pais": "Espanha", "paisId": "espanha", "pilar": "digital", "descricao": "Expansão da rede 5G", "estado": "em-curso", "prazo": "2024-Q4", "csr": "CSR 3 de 2020" },
-    { "id": 8, "pais": "França", "paisId": "franca", "pilar": "verde", "descricao": "Renovação térmica de habitação", "estado": "concluido", "prazo": "2023-Q3", "csr": "CSR 3 de 2019" },
-    { "id": 9, "pais": "França", "paisId": "franca", "pilar": "crescimento", "descricao": "Estratégia de hidrogénio verde", "estado": "em-curso", "prazo": "2024-Q2", "csr": "CSR 1 de 2021" },
-    { "id": 10, "pais": "Alemanha", "paisId": "alemanha", "pilar": "digital", "descricao": "Digitalização de salas de aula", "estado": "concluido", "prazo": "2023-Q4", "csr": "CSR 2 de 2020" },
-    { "id": 11, "pais": "Alemanha", "paisId": "alemanha", "pilar": "verde", "descricao": "Implementação da estratégia de hidrogénio", "estado": "em-curso", "prazo": "2024-Q3", "csr": "CSR 1 de 2020" }
+    { "id": 7, "pais": "Espanha", "paisId": "espanha", "pilar": "digital", "descricao": "Expansão da rede 5G para cobertura de 90% da pop.", "estado": "em-curso", "prazo": "2024-Q4", "csr": "CSR 3 de 2020" },
+    { "id": 8, "pais": "França", "paisId": "franca", "pilar": "verde", "descricao": "Renovação térmica de 700k habitações", "estado": "concluido", "prazo": "2023-Q3", "csr": "CSR 3 de 2019" },
+    { "id": 9, "pais": "França", "paisId": "franca", "pilar": "crescimento", "descricao": "Estratégia de hidrogénio verde (6,5 GW)", "estado": "em-curso", "prazo": "2024-Q2", "csr": "CSR 1 de 2021" },
+    { "id": 10, "pais": "Alemanha", "paisId": "alemanha", "pilar": "digital", "descricao": "Digitalização de 40k salas de aula", "estado": "concluido", "prazo": "2023-Q4", "csr": "CSR 2 de 2020" },
+    { "id": 11, "pais": "Alemanha", "paisId": "alemanha", "pilar": "verde", "descricao": "Implementação da estratégia de hidrogénio", "estado": "em-curso", "prazo": "2024-Q3", "csr": "CSR 1 de 2020" },
+    { "id": 12, "pais": "Itália", "paisId": "italia", "pilar": "crescimento", "descricao": "Reforma da justiça — redução pendências 40%", "estado": "concluido", "prazo": "2023-Q1", "csr": "CSR 4 de 2019" },
+    { "id": 13, "pais": "Itália", "paisId": "italia", "pilar": "social", "descricao": "264k novos lugares em creches", "estado": "em-curso", "prazo": "2025-Q4", "csr": "CSR 3 de 2020" },
+    { "id": 14, "pais": "Polónia", "paisId": "polonia", "pilar": "crescimento", "descricao": "Reforma judicial (independência tribunais)", "estado": "concluido", "prazo": "2023-Q2", "csr": "CSR 1 de 2023" },
+    { "id": 15, "pais": "Polónia", "paisId": "polonia", "pilar": "verde", "descricao": "Instalação de 5000 MW solar", "estado": "em-curso", "prazo": "2025-Q2", "csr": "CSR 3 de 2022" },
+    { "id": 16, "pais": "Grécia", "paisId": "grecia", "pilar": "crescimento", "descricao": "Reforma fiscal e simplificação tributária", "estado": "concluido", "prazo": "2023-Q1", "csr": "CSR 2 de 2020" },
+    { "id": 17, "pais": "Grécia", "paisId": "grecia", "pilar": "digital", "descricao": "Digitalização de 30k empresas gregas", "estado": "em-curso", "prazo": "2024-Q4", "csr": "CSR 4 de 2020" },
+    { "id": 18, "pais": "Roménia", "paisId": "romenia", "pilar": "saude", "descricao": "Construção de 25 novos hospitais regionais", "estado": "em-curso", "prazo": "2026-Q1", "csr": "CSR 4 de 2021" },
+    { "id": 19, "pais": "Croácia", "paisId": "croacia", "pilar": "crescimento", "descricao": "Reforma anticorrupção e transparência", "estado": "concluido", "prazo": "2022-Q4", "csr": "CSR 1 de 2020" },
+    { "id": 20, "pais": "Croácia", "paisId": "croacia", "pilar": "verde", "descricao": "Instalação 1200 MW renováveis", "estado": "em-curso", "prazo": "2025-Q3", "csr": "CSR 3 de 2020" }
   ],
   "desembolsos": [
     { "id": 1, "paisId": "portugal", "pais": "Portugal", "montante": 2.22, "data": "2022-06", "tipo": "Subvenção", "milestones": 38, "estado": "Desembolsado" },
@@ -304,7 +1090,17 @@
     { "id": 7, "paisId": "franca", "pais": "França", "montante": 5.10, "data": "2021-08", "tipo": "Subvenção", "milestones": 17, "estado": "Desembolsado" },
     { "id": 8, "paisId": "franca", "pais": "França", "montante": 4.40, "data": "2022-05", "tipo": "Subvenção", "milestones": 36, "estado": "Desembolsado" },
     { "id": 9, "paisId": "franca", "pais": "França", "montante": 5.10, "data": "2025-02", "tipo": "Subvenção", "milestones": 41, "estado": "Desembolsado" },
-    { "id": 10, "paisId": "alemanha", "pais": "Alemanha", "montante": 2.25, "data": "2023-08", "tipo": "Subvenção", "milestones": 29, "estado": "Desembolsado" }
+    { "id": 10, "paisId": "alemanha", "pais": "Alemanha", "montante": 2.25, "data": "2023-08", "tipo": "Subvenção", "milestones": 29, "estado": "Desembolsado" },
+    { "id": 11, "paisId": "italia", "pais": "Itália", "montante": 24.9, "data": "2021-08", "tipo": "Subvenção", "milestones": 51, "estado": "Desembolsado" },
+    { "id": 12, "paisId": "italia", "pais": "Itália", "montante": 21.4, "data": "2022-11", "tipo": "Subvenção+Empréstimo", "milestones": 45, "estado": "Desembolsado" },
+    { "id": 13, "paisId": "polonia", "pais": "Polónia", "montante": 5.2, "data": "2024-03", "tipo": "Subvenção", "milestones": 37, "estado": "Desembolsado" },
+    { "id": 14, "paisId": "grecia", "pais": "Grécia", "montante": 3.56, "data": "2021-08", "tipo": "Subvenção", "milestones": 25, "estado": "Desembolsado" },
+    { "id": 15, "paisId": "grecia", "pais": "Grécia", "montante": 4.22, "data": "2022-12", "tipo": "Subvenção", "milestones": 38, "estado": "Desembolsado" },
+    { "id": 16, "paisId": "grecia", "pais": "Grécia", "montante": 4.52, "data": "2024-05", "tipo": "Subvenção", "milestones": 42, "estado": "Desembolsado" },
+    { "id": 17, "paisId": "romenia", "pais": "Roménia", "montante": 1.84, "data": "2022-01", "tipo": "Subvenção", "milestones": 20, "estado": "Desembolsado" },
+    { "id": 18, "paisId": "romenia", "pais": "Roménia", "montante": 1.56, "data": "2023-06", "tipo": "Subvenção", "milestones": 28, "estado": "Desembolsado" },
+    { "id": 19, "paisId": "croacia", "pais": "Croácia", "montante": 2.1, "data": "2022-04", "tipo": "Subvenção", "milestones": 30, "estado": "Desembolsado" },
+    { "id": 20, "paisId": "croacia", "pais": "Croácia", "montante": 2.7, "data": "2023-09", "tipo": "Subvenção+Empréstimo", "milestones": 35, "estado": "Desembolsado" }
   ],
   "indicadoresComuns": [
     { "id": "IC1", "nome": "Poupança em consumo de energia primária", "valor": "37.568.052", "unidade": "MWh/ano", "categorias": ["verde", "crescimento"] },
@@ -323,47 +1119,15 @@
     { "id": "IC14", "nome": "Jovens dos 15-29 anos apoiados", "valor": "12.676.811", "unidade": "jovens", "categorias": ["geracao"] }
   ],
   "cronologia": [
-    {
-      "id": 1, "data": "20 Jan 2026", "categoria": "Conferência", "novo": true,
-      "titulo": "Conferência de Investigação RRF – Avaliação de Impacto",
-      "descricao": "Conferência da Comissão sobre impactos macroeconómicos e estruturais.",
-      "cor": "#6A1B9A", "pais": "UE"
-    },
-    {
-      "id": 2, "data": "10 Nov 2025", "categoria": "Desembolso",
-      "titulo": "€2,25 mil milhões desembolsados para a Alemanha",
-      "descricao": "Após avaliação bem-sucedida de milestones digitais e verdes.",
-      "cor": "#2E7D32", "pais": "Alemanha"
-    },
-    {
-      "id": 3, "data": "04 Jun 2025", "categoria": "Comunicação",
-      "titulo": "NextGenerationEU — O caminho até 2026",
-      "descricao": "A Comissão publicou uma Comunicação sobre os passos para a conclusão do RRF.",
-      "cor": "#1B3A6B", "pais": "UE"
-    },
-    {
-      "id": 4, "data": "15 Mai 2025", "categoria": "Avaliação",
-      "titulo": "Avaliação positiva do 4.º pedido de pagamento da Espanha",
-      "descricao": "Avaliação bem-sucedida de 44 milestones no quadro do PRR espanhol.",
-      "cor": "#E65100", "pais": "Espanha"
-    },
-    {
-      "id": 5, "data": "15 Mar 2025", "categoria": "Avaliação",
-      "titulo": "Avaliação positiva do 5.º pagamento a Portugal",
-      "descricao": "Avaliação bem-sucedida de 14 milestones no quadro do PRR português.",
-      "cor": "#E65100", "pais": "Portugal"
-    },
-    {
-      "id": 6, "data": "10 Fev 2025", "categoria": "Desembolso",
-      "titulo": "€5,1 mil milhões desembolsados para a França",
-      "descricao": "Pagamento por milestones de descarbonização industrial alcançados.",
-      "cor": "#2E7D32", "pais": "França"
-    },
-    {
-      "id": 7, "data": "19 Fev 2021", "categoria": "Legislação", "historico": true,
-      "titulo": "Regulamento RRF entra em vigor",
-      "descricao": "Estabelecido o quadro jurídico do instrumento de recuperação.",
-      "cor": "#B71C1C", "pais": "UE"
-    }
+    { "id": 1, "data": "20 Jan 2026", "categoria": "Conferência", "novo": true, "titulo": "Conferência de Investigação RRF — Avaliação de Impacto", "descricao": "Conferência da Comissão sobre impactos macroeconómicos e estruturais do RRF.", "cor": "#6A1B9A", "pais": "UE" },
+    { "id": 2, "data": "10 Nov 2025", "categoria": "Desembolso", "titulo": "€2,25 mil milhões desembolsados para a Alemanha", "descricao": "Após avaliação bem-sucedida de milestones digitais e verdes.", "cor": "#2E7D32", "pais": "Alemanha" },
+    { "id": 3, "data": "04 Jun 2025", "categoria": "Comunicação", "titulo": "NextGenerationEU — O caminho até 2026", "descricao": "A Comissão publicou uma Comunicação sobre os passos para a conclusão do RRF até ao prazo de agosto 2026.", "cor": "#1B3A6B", "pais": "UE" },
+    { "id": 4, "data": "15 Mai 2025", "categoria": "Avaliação", "titulo": "Avaliação positiva do 4.º pedido de pagamento da Espanha", "descricao": "Avaliação bem-sucedida de 44 milestones no quadro do PRTR espanhol.", "cor": "#E65100", "pais": "Espanha" },
+    { "id": 5, "data": "15 Mar 2025", "categoria": "Avaliação", "titulo": "Avaliação positiva do 5.º pagamento a Portugal", "descricao": "Avaliação bem-sucedida de 14 milestones no quadro do PRR português.", "cor": "#E65100", "pais": "Portugal" },
+    { "id": 6, "data": "10 Fev 2025", "categoria": "Desembolso", "titulo": "€5,1 mil milhões desembolsados para a França", "descricao": "Pagamento por milestones de descarbonização industrial alcançados no âmbito do PNRR francês.", "cor": "#2E7D32", "pais": "França" },
+    { "id": 7, "data": "Mar 2024", "categoria": "Desembolso", "titulo": "€5,2 mil milhões desbloqueados para a Polónia", "descricao": "Primeiro desembolso polaco após reforma judicial que satisfez os marcos de Estado de direito.", "cor": "#2E7D32", "pais": "Polónia" },
+    { "id": 8, "data": "Mai 2024", "categoria": "Avaliação", "titulo": "3.º pedido de pagamento da Grécia aprovado", "descricao": "€4,52B aprovados após validação de reformas fiscais e digitais.", "cor": "#E65100", "pais": "Grécia" },
+    { "id": 9, "data": "Jan 2024", "categoria": "Comunicação", "titulo": "Relatório anual RRF — execução 2023", "descricao": "A Comissão publicou o relatório de execução com 10.800 milestones e targets totais identificados.", "cor": "#1B3A6B", "pais": "UE" },
+    { "id": 10, "data": "19 Fev 2021", "categoria": "Legislação", "historico": true, "titulo": "Regulamento RRF entra em vigor", "descricao": "Estabelecido o quadro jurídico do instrumento de recuperação NextGenerationEU.", "cor": "#B71C1C", "pais": "UE" }
   ]
 }

@@ -1,13 +1,12 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { LMap, LGeoJson } from '@vue-leaflet/vue-leaflet'
 import 'leaflet/dist/leaflet.css'
 import * as topojson from 'topojson-client'
-import { usePrrStore } from '../stores/prrStore'
 import { storeToRefs } from 'pinia'
+import { usePrrStore } from '../stores/prrStore'
 
-const store = usePrrStore()
-const { paises } = storeToRefs(store)
+const { paises, desembolsos } = storeToRefs(usePrrStore())
 
 // Props & Emits
 const props = defineProps({
@@ -15,35 +14,58 @@ const props = defineProps({
 })
 const emit = defineEmits(['selecionar-pais'])
 
-// Países da UE com RRF — 27 países
-const paisesPRR = {
-  Austria: { id: 'austria', desembolsado: 1.85, alocacao: 3.5 },
-  Belgium: { id: 'belgium', desembolsado: 3.25, alocacao: 5.9 },
-  Bulgaria: { id: 'bulgaria', desembolsado: 2.89, alocacao: 6.3 },
-  Croatia: { id: 'croatia', desembolsado: 5.21, alocacao: 10.0 },
-  Cyprus: { id: 'cyprus', desembolsado: 0.62, alocacao: 1.2 },
-  Czechia: { id: 'czechia', desembolsado: 3.64, alocacao: 7.0 },
-  Denmark: { id: 'denmark', desembolsado: 0.68, alocacao: 1.3 },
-  Estonia: { id: 'estonia', desembolsado: 0.51, alocacao: 0.977 },
-  Finland: { id: 'finland', desembolsado: 1.09, alocacao: 2.1 },
-  France: { id: 'france', desembolsado: 21.68, alocacao: 40.9 },
-  Germany: { id: 'germany', desembolsado: 14.84, alocacao: 28.0 },
-  Greece: { id: 'greece', desembolsado: 15.87, alocacao: 30.5 },
-  Hungary: { id: 'hungary', desembolsado: 3.38, alocacao: 7.2 },
-  Ireland: { id: 'ireland', desembolsado: 0.48, alocacao: 0.92 },
-  Italy: { id: 'italy', desembolsado: 101.92, alocacao: 191.5 },
-  Latvia: { id: 'latvia', desembolsado: 0.95, alocacao: 1.83 },
-  Lithuania: { id: 'lithuania', desembolsado: 1.16, alocacao: 2.24 },
-  Luxembourg: { id: 'luxembourg', desembolsado: 0.05, alocacao: 0.1 },
-  Malta: { id: 'malta', desembolsado: 0.29, alocacao: 0.56 },
-  Netherlands: { id: 'netherlands', desembolsado: 3.18, alocacao: 6.0 },
-  Poland: { id: 'poland', desembolsado: 30.88, alocacao: 58.1 },
-  Portugal: { id: 'portugal', desembolsado: 10.36, alocacao: 19.3 },
-  Romania: { id: 'romania', desembolsado: 7.34, alocacao: 14.2 },
-  Slovakia: { id: 'slovakia', desembolsado: 3.27, alocacao: 6.3 },
-  Slovenia: { id: 'slovenia', desembolsado: 1.46, alocacao: 2.8 },
-  Spain: { id: 'spain', desembolsado: 86.79, alocacao: 163.0 },
-  Sweden: { id: 'sweden', desembolsado: 1.76, alocacao: 3.3 },
+// Nome do país no topojson -> id de país no db.json
+const mapaNomeParaId = {
+  Austria: 'austria',
+  Belgium: 'belgica',
+  Bulgaria: 'bulgaria',
+  Croatia: 'croacia',
+  Cyprus: 'chipre',
+  Czechia: 'republica-checa',
+  Denmark: 'dinamarca',
+  Estonia: 'estonia',
+  Finland: 'finlandia',
+  France: 'franca',
+  Germany: 'alemanha',
+  Greece: 'grecia',
+  Hungary: 'hungria',
+  Ireland: 'irlanda',
+  Italy: 'italia',
+  Latvia: 'letonia',
+  Lithuania: 'lituania',
+  Luxembourg: 'luxemburgo',
+  Malta: 'malta',
+  Netherlands: 'paises-baixos',
+  Poland: 'polonia',
+  Portugal: 'portugal',
+  Romania: 'romenia',
+  Slovakia: 'eslovaquia',
+  Slovenia: 'eslovenia',
+  Spain: 'espanha',
+  Sweden: 'suecia',
+}
+
+const paisesPorId = computed(() => new Map(paises.value.map((p) => [p.id, p])))
+
+const desembolsadoPorPaisId = computed(() => {
+  return desembolsos.value.reduce((acc, d) => {
+    acc[d.paisId] = (acc[d.paisId] ?? 0) + Number(d.montante ?? 0)
+    return acc
+  }, {})
+})
+
+function infoPrrPorNome(nomePais) {
+  const id = mapaNomeParaId[nomePais]
+  if (!id) return null
+
+  const pais = paisesPorId.value.get(id)
+  if (!pais) return null
+
+  return {
+    id,
+    alocacao: Number(pais.alocacao ?? 0),
+    desembolsado: Number(desembolsadoPorPaisId.value[id] ?? 0),
+  }
 }
 
 // Todos os países EU (sem PRR no nosso dataset — mostrados em azul mais claro)
@@ -65,8 +87,9 @@ const paisesEuropeus = new Set([
 
 // Escala de cor por % de desembolso
 function corPorDesembolso(nomePais) {
-  const info = paisesPRR[nomePais]
+  const info = infoPrrPorNome(nomePais)
   if (!info) return '#B3CCE8' // UE sem dados — azul claro
+  if (info.alocacao <= 0) return '#B3CCE8'
   const pct = (info.desembolsado / info.alocacao) * 100
   if (pct >= 40) return '#1B3A6B'
   if (pct >= 25) return '#2E5FAD'
@@ -76,6 +99,10 @@ function corPorDesembolso(nomePais) {
 
 const geojson = ref(null)
 const tooltip = ref(null)
+const geoJsonRenderKey = computed(() => {
+  const total = desembolsos.value.reduce((s, d) => s + Number(d.montante ?? 0), 0)
+  return `${paises.value.length}-${desembolsos.value.length}-${total.toFixed(2)}`
+})
 
 const legendaItens = [
   { cor: '#7AAAD6', label: '< 15%' },
@@ -96,8 +123,9 @@ onMounted(async () => {
 function estiloFeature(feature) {
   const nome = feature?.properties?.name ?? ''
   const eUE = paisesUE.has(nome)
-  const temPRR = !!paisesPRR[nome]
-  const selecionado = props.paisSelecionado === paisesPRR[nome]?.id
+  const info = infoPrrPorNome(nome)
+  const temPRR = !!info
+  const selecionado = props.paisSelecionado === info?.id
 
   if (!eUE) {
     return { fillColor: '#E2EAF2', color: '#ffffff', weight: 0.8, fillOpacity: 1 }
@@ -113,7 +141,7 @@ function estiloFeature(feature) {
 function porFeature(feature, layer) {
   const nome = feature?.properties?.name ?? ''
   const eUE = paisesUE.has(nome)
-  const info = paisesPRR[nome]
+  const info = infoPrrPorNome(nome)
 
   layer.on({
     click() {
@@ -124,7 +152,9 @@ function porFeature(feature, layer) {
     },
     mouseover(e) {
       if (eUE) layer.setStyle({ fillColor: '#F9A825' })
-      const pct = info ? ((info.desembolsado / info.alocacao) * 100).toFixed(1) + '% desembolsado' : 'Sem dados PRR'
+      const pct = info && info.alocacao > 0
+        ? ((info.desembolsado / info.alocacao) * 100).toFixed(1) + '% desembolsado'
+        : 'Sem dados PRR'
       tooltip.value = { x: e.originalEvent.clientX, y: e.originalEvent.clientY, nome, pct }
     },
     mouseout() {
@@ -155,6 +185,7 @@ function porFeature(feature, layer) {
     >
       <l-geo-json
         v-if="geojson"
+        :key="geoJsonRenderKey"
         :geojson="geojson"
         :options-style="estiloFeature"
         :options="{ onEachFeature: porFeature }"
