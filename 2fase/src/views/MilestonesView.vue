@@ -55,7 +55,17 @@ const chartOpts = {
 }
 
 const paises = computed(() => [...new Set(milestones.value.map((m) => m.pais))].sort())
-const pilares = computed(() => [...new Set(milestones.value.map((m) => m.pilar))].sort())
+// IDs presentes nos milestones
+const pilaresIds = computed(() => [...new Set(milestones.value.map((m) => m.pilar))].sort())
+// Opções com label usando o `pilares` do store (shortName capitalizado)
+const pilares = computed(() => {
+  const storePilares = (store.pilares || [])
+  // map store pilares to id->label, fallback to id
+  const map = {}
+  storePilares.forEach((p) => (map[p.id] = p.shortName || p.nome || p.id))
+  // return only ids that appear in milestones, preserving sort
+  return pilaresIds.value.map((id) => ({ id, label: map[id] ?? id }))
+})
 
 const filtrados = computed(() =>
   milestones.value.filter((m) => {
@@ -137,7 +147,7 @@ const filtrados = computed(() =>
               class="text-xs border border-prr-border rounded px-2 py-1 bg-white focus:outline-none focus:ring-1 focus:ring-prr-blue"
             >
               <option value="">Todos os pilares</option>
-              <option v-for="p in pilares" :key="p" :value="p">{{ p }}</option>
+              <option v-for="p in pilares" :key="p.id" :value="p.id">{{ p.label }}</option>
             </select>
             <button
               v-if="filtroPais || filtroPilar"

@@ -16,6 +16,8 @@ const store = usePrrStore()
 const { paises, milestones, desembolsos, pilares, loading } = storeToRefs(store)
 
 const paisSelecionados = ref([])
+const pilarSelecionado = ref('verde')
+const metricaPilar = ref('pct') // 'pct', 'euro', 'pct_norm', 'euro_norm'
 
 onMounted(() => {
   store.carregarTudo()
@@ -94,6 +96,101 @@ const chartPilares = computed(() => {
   }
 })
 
+const pilarAtivo = computed(() => pilares.value.find((p) => p.id === pilarSelecionado.value) ?? pilares.value[0] ?? null)
+
+const comparacaoPorPilar = computed(() => {
+  if (!pilarAtivo.value) return []
+
+  // Origem robusta: se houver países selecionados, mapeia seus ids para objetos em `paises`.
+  const origem = (paisSelecionados.value && paisSelecionados.value.length > 0)
+    ? paisSelecionados.value.map((id) => paises.value.find((p) => p.id === id)).filter(Boolean)
+    : paises.value
+
+  // Calcula todas as métricas para cada país
+  const dados = [...origem].map((pais) => {
+    const pct = Number(pais.pilaresAlocacao?.[pilarAtivo.value.id] ?? 0)
+    const valorAbsoluto = pais.alocacao * (pct / 100)
+    
+    // Normalização: por tamanho relativo da alocação do pilar entre os países
+    return {
+      id: pais.id,
+      pais: pais.nome,
+      bandeira: pais.bandeira,
+      pct,
+      euro: valorAbsoluto,
+      pct_norm: pct,
+      euro_norm: valorAbsoluto,
+    }
+  })
+
+  // Normaliza os valores se a métrica selecionada for "norm"
+  if (metricaPilar.value.includes('norm')) {
+    const metricaBase = metricaPilar.value === 'pct_norm' ? 'pct' : 'euro'
+    const valores = dados.map(d => d[metricaBase])
+    const max = Math.max(...valores)
+    const min = Math.min(...valores)
+    const range = max - min || 1
+
+    dados.forEach(d => {
+      if (metricaPilar.value === 'pct_norm') {
+        d.pct_norm = ((d.pct - min) / range) * 100
+      } else {
+        d.euro_norm = ((d.euro - min) / range) * 100
+      }
+    })
+  }
+
+  // Ordena pela métrica selecionada
+  const metricaOrdenacao = metricaPilar.value
+  return dados.sort((a, b) => (b[metricaOrdenacao] ?? 0) - (a[metricaOrdenacao] ?? 0))
+})
+
+const chartPilarRegional = computed(() => {
+  const dados = comparacaoPorPilar.value.map((item) => item[metricaPilar.value] ?? 0)
+  const metricaLabel = {
+    pct: '(% do plano)',
+    euro: '(€B)',
+    pct_norm: '(% normalizado)',
+    euro_norm: '(€B normalizado)',
+  }[metricaPilar.value]
+  
+  return {
+    labels: comparacaoPorPilar.value.map((item) => `${item.bandeira} ${item.pais}`),
+    datasets: [
+      {
+        label: pilarAtivo.value ? `${pilarAtivo.value.shortName} ${metricaLabel}` : 'Pilar',
+        data: dados,
+        backgroundColor: pilarAtivo.value ? `${pilarAtivo.value.cor}99` : '#1B3A6B99',
+        borderColor: pilarAtivo.value ? pilarAtivo.value.cor : '#1B3A6B',
+        borderWidth: 2,
+        borderRadius: 6,
+      },
+    ],
+  }
+})
+
+const chartOptsPilarRegional = computed(() => {
+  const isPercentage = metricaPilar.value.includes('pct')
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: {
+      x: {
+        min: 0,
+        max: isPercentage ? 100 : undefined,
+        ticks: {
+          callback: (v) => (isPercentage ? `${v}%` : `€${v}B`),
+          font: { size: 11 },
+        },
+        grid: { color: '#F1F5F9' },
+      },
+      y: { grid: { display: false }, ticks: { font: { size: 11 } } },
+    },
+  }
+})
+
 const radarOpts = {
   responsive: true,
   maintainAspectRatio: false,
@@ -146,7 +243,40 @@ const tabelaComparacao = computed(() => {
       desembolsosPagamentos: ds.length,
     }
   })
-});
+})
+
+const tabelaComparacaoPorPilar = computed(() => {
+  if (!pilarAtivo.value) return []
+  
+  return comparacaoPorPilar.value.map((item, idx) => {
+    const valor = item[metricaPilar.value]
+    let display = ''
+    
+    if (metricaPilar.value === 'pct') {
+      display = `${valor.toFixed(1)}%`
+    } else if (metricaPilar.value === 'euro') {
+      display = `€${valor.toFixed(2)}B`
+    } else if (metricaPilar.value === 'pct_norm') {
+      display = `${valor.toFixed(1)}%`
+    } else if (metricaPilar.value === 'euro_norm') {
+      display = `€${valor.toFixed(2)}B`
+    }
+
+    return {
+      ...item,
+      display,
+      valor,
+      valorEstimado: item.euro.toFixed(2), // Para compatibilidade com export
+      rank: idx + 1,
+    }
+  })
+})
+
+const medalhas = {
+  1: '🥇',
+  2: '🥈',
+  3: '🥉',
+}
 
 // Insights - safe reduces
 const maiorAlocacao = computed(() => {
@@ -163,6 +293,11 @@ const melhorTaxa = computed(() => {
   if (!paisesComparados.value || paisesComparados.value.length < 2) return null
   return paisesComparados.value.reduce((max, p) => ((p.desembolsado / p.alocacao) * 100 > (max.desembolsado / max.alocacao) * 100 ? p : max))
 });
+
+const maiorPilarRegional = computed(() => {
+  if (!comparacaoPorPilar.value.length) return null
+  return comparacaoPorPilar.value[0]
+})
 </script>
 
 <template>
@@ -203,8 +338,122 @@ const melhorTaxa = computed(() => {
         </div>
       </div>
 
-      <!-- Gráficos e tabelas (só mostrar se há países selecionados) -->
-      <template v-if="paisesComparados.length > 0">
+        <!-- Gráficos e tabelas (mostra mesmo sem seleção — usa todos os países por defeito) -->
+      <template v-if="paises && paises.length >= 0">
+        <!-- Comparação por pilar -->
+        <div class="bg-white rounded-xl border border-prr-border shadow-sm p-6">
+          <div class="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <h3 class="text-sm font-bold text-prr-blue mb-1">Comparação regional por pilar</h3>
+              <p class="text-xs text-slate-400">
+                Compara os países selecionados pela percentagem do plano dedicada ao pilar escolhido.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-6">
+            <!-- Seletor de Pilares -->
+            <div class="flex-1">
+              <p class="text-xs text-slate-500 font-semibold mb-2">Pilar</p>
+              <div class="flex flex-wrap gap-2">
+                <button
+                  v-for="p in pilares"
+                  :key="p.id"
+                  @click="pilarSelecionado = p.id"
+                  class="px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors"
+                  :class="pilarSelecionado === p.id ? 'text-white border-transparent' : 'bg-white text-slate-500 border-prr-border hover:border-prr-blue/40'"
+                  :style="pilarSelecionado === p.id ? { backgroundColor: p.cor } : {}"
+                >
+                  {{ p.shortName }}
+                </button>
+              </div>
+            </div>
+
+            <!-- Seletor de Métrica + Export -->
+            <div class="flex flex-col gap-2 lg:flex-row lg:items-end lg:gap-3">
+              <div class="flex flex-col gap-2">
+                <p class="text-xs text-slate-500 font-semibold">Métrica</p>
+                <select
+                  v-model="metricaPilar"
+                  class="px-3 py-1.5 rounded border border-prr-border bg-white text-xs font-semibold text-slate-700 hover:border-prr-blue/40 transition-colors focus:outline-none focus:ring-2 focus:ring-prr-blue/20"
+                >
+                  <option value="pct">% do plano</option>
+                  <option value="euro">€ Absoluto</option>
+                  <option value="pct_norm">% Normalizado</option>
+                  <option value="euro_norm">€ Normalizado</option>
+                </select>
+              </div>
+              <ExportButton :data="tabelaComparacaoPorPilar" :filename="`ranking-pilar-${pilarSelecionado}`" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="h-72">
+              <Bar :data="chartPilarRegional" :options="chartOptsPilarRegional" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="rounded-xl bg-prr-light p-4 border border-prr-border">
+                <p class="text-xs text-slate-500 mb-1">Pilar em destaque</p>
+                <p class="text-lg font-black" :style="{ color: pilarAtivo?.cor ?? '#1B3A6B' }">
+                  {{ pilarAtivo?.icone }} {{ pilarAtivo?.nome }}
+                </p>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                  {{ pilarAtivo?.descricao }}
+                </p>
+              </div>
+
+              <div class="rounded-xl bg-prr-light p-4 border border-prr-border">
+                <p class="text-xs text-slate-500 mb-1">Maior peso no pilar</p>
+                <p v-if="maiorPilarRegional" class="text-lg font-black text-prr-blue">
+                  {{ maiorPilarRegional.bandeira }} {{ maiorPilarRegional.pais }}
+                </p>
+                <p v-if="maiorPilarRegional" class="text-xs text-slate-500 mt-2">
+                  {{
+                    metricaPilar === 'pct'
+                      ? `${maiorPilarRegional.pct.toFixed(1)}% do plano dedicado a este setor`
+                      : metricaPilar === 'euro'
+                        ? `€${maiorPilarRegional.euro.toFixed(2)}B alocados`
+                        : metricaPilar === 'pct_norm'
+                          ? `${maiorPilarRegional.pct_norm.toFixed(1)}% (normalizado)`
+                          : `€${maiorPilarRegional.euro_norm.toFixed(2)}B (normalizado)`
+                  }}
+                </p>
+              </div>
+
+              <div class="rounded-xl bg-prr-light p-4 border border-prr-border sm:col-span-2">
+                <p class="text-xs text-slate-500 mb-2">Detalhe por país</p>
+                <div class="space-y-3 max-h-56 overflow-y-auto pr-2">
+                  <div
+                    v-for="row in tabelaComparacaoPorPilar"
+                    :key="row.id"
+                    class="flex items-center justify-between gap-4 p-2 rounded-lg transition-colors"
+                    :class="
+                      row.rank <= 3
+                        ? row.rank === 1
+                          ? 'bg-yellow-50 border-l-4 border-l-yellow-400'
+                          : row.rank === 2
+                            ? 'bg-slate-100 border-l-4 border-l-slate-400'
+                            : 'bg-orange-50 border-l-4 border-l-orange-300'
+                        : 'hover:bg-white/50'
+                    "
+                  >
+                    <div class="flex items-center gap-2 min-w-0">
+                      <span v-if="row.rank <= 3" class="text-xl">{{ medalhas[row.rank] }}</span>
+                      <span class="text-lg">{{ row.bandeira }}</span>
+                      <span class="text-sm font-semibold text-slate-700 truncate">{{ row.pais }}</span>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-sm font-bold text-prr-blue">{{ row.display }}</p>
+                      <p class="text-xs text-slate-400">≈ €{{ row.valorEstimado }}B</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Gráfico de Alocação vs Desembolso -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div class="bg-white rounded-xl border border-prr-border shadow-sm p-6">

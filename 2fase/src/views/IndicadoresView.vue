@@ -8,7 +8,7 @@ import PilarBadge from '../components/PilarBadge.vue'
 import ExportButton from '../components/ExportButton.vue'
 
 const store = usePrrStore()
-const { indicadoresComuns, loading } = storeToRefs(store)
+const { indicadoresComuns, loading, pilares } = storeToRefs(store)
 onMounted(() => store.carregarTudo())
 
 const filtro = ref('')
@@ -20,7 +20,11 @@ const filtrados = computed(() =>
 const categorias = computed(() => {
   const cats = new Set()
   indicadoresComuns.value.forEach((i) => i.categorias.forEach((c) => cats.add(c)))
-  return [...cats]
+  // map to objects with id + label from pilares store (shortName with capitalization)
+  return [...cats].map((id) => {
+    const p = pilares.value.find((pp) => pp.id === id)
+    return { id, label: p ? p.shortName : id }
+  })
 })
 </script>
 
@@ -55,16 +59,16 @@ const categorias = computed(() => {
         </button>
         <button
           v-for="cat in categorias"
-          :key="cat"
-          @click="filtro = cat"
+          :key="cat.id"
+          @click="filtro = cat.id"
           class="px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors"
           :class="
-            filtro === cat
+            filtro === cat.id
               ? 'bg-prr-blue text-white border-prr-blue'
               : 'bg-white text-slate-600 border-prr-border hover:border-prr-blue'
           "
         >
-          {{ cat }}
+          {{ cat.label }}
         </button>
       </div>
 
