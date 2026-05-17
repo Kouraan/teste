@@ -121,7 +121,7 @@ npm run preview
 ## Estrutura do projeto
 
 ```txt
-nosso/
+projeto/
 ├── db.json
 ├── index.html
 ├── package.json
