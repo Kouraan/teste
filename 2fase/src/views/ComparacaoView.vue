@@ -184,7 +184,7 @@ const melhorTaxa = computed(() => {
       <!-- Seletor de países -->
       <div class="bg-white rounded-xl border border-prr-border shadow-sm p-6">
         <h3 class="text-sm font-bold text-prr-blue mb-4">Selecionar Países (máx. 3)</h3>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-[420px] overflow-y-auto pr-1">
           <button
             v-for="p in paises"
             :key="p.id"

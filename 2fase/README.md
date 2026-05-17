@@ -10,16 +10,14 @@ Projeto académico desenvolvido no âmbito de **Interação Pessoa-Máquina (IPM
 
 ### Páginas
 
-| Página                   | Descrição |
-|                          |
-| **Visão Geral**          | KPIs globais (€650B RRF, subvenções, empréstimos, taxa de desembolso), mapa interativo da Europa e gráfico de alocação vs. desembolso por país |
-| **Países**               | Cards com barra de progresso de execução financeira para os 27 EM; clique para ver detalhe |
-| **Detalhe de País**      | Dashboard completo por país: hero com descrição, KPIs, barras de progresso, alocação por pilar, gráfico de desembolsos cumulativos, milestones por pilar, tabela de pedidos de pagamento, reformas-chave, investimentos e indicadores de output |
-| **Comparação**           | Seleção de 2–3 países para comparar lado a lado: gráficos de alocação vs. desembolso, taxa de execução, radar de pilares temáticos e tabela resumo |
-| **Milestones & Targets** | KPIs de estado (concluídos/em curso/pendentes), gráfico de taxa de conclusão por país, tabela filtrável por país e pilar com badges de estado |
-| **Desembolsos**          | KPIs totais, gráfico donut por país e tabela com barras de progresso de execução |
-| **Indicadores Comuns**   | Grid dos 14 indicadores de reporte obrigatório (IC1–IC14), filtráveis por pilar temático |
-| **Cronologia**           | Timeline vertical de eventos, avaliações e desembolsos, filtrável por país e categoria |
+- **Visão Geral**: KPIs globais (€650B RRF, subvenções, empréstimos, taxa de desembolso), mapa interativo da Europa e gráfico de alocação vs. desembolso por país.
+- **Países**: cards com barra de progresso de execução financeira para os 27 EM; clique para ver detalhe.
+- **Detalhe de País**: dashboard completo por país com hero, KPIs, barras de progresso, alocação por pilar, gráfico de desembolsos cumulativos, milestones por pilar, tabela de pedidos de pagamento, reformas-chave, investimentos e indicadores de output.
+- **Comparação**: seleção de 2–3 países para comparar lado a lado com gráficos de alocação vs. desembolso, taxa de execução, radar de pilares temáticos e tabela resumo.
+- **Milestones & Targets**: KPIs de estado, gráfico de taxa de conclusão por país, tabela filtrável por país e pilar com badges de estado.
+- **Desembolsos**: KPIs totais, gráfico donut por país e tabela com barras de progresso de execução.
+- **Indicadores Comuns**: grid dos 14 indicadores de reporte obrigatório (IC1–IC14), filtráveis por pilar temático.
+- **Cronologia**: timeline vertical de eventos, avaliações e desembolsos, filtrável por país e categoria.
 
 ### Funcionalidades transversais
 
